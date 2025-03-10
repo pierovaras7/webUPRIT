@@ -1,0 +1,402 @@
+        body{
+            line-height: 2;
+        }
+
+        section p li{
+            font-weight: 500 !important;
+            color: black !important;
+            text-align: justify;
+            font-size: 20px;
+        }
+        section p{
+            font-weight: 500 !important;
+            color: black !important;
+            text-align: justify;
+            font-size: 20px;
+        }
+
+
+        header{
+            background-color: #a61b3b;
+            text-align: center;
+            color: white;
+            margin: 0 !important;
+            padding: 4px;
+        }
+
+        h1{
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 49px;
+            margin: 0 !important;
+
+        }
+
+        h3{
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 29px;
+        }
+
+
+        section {
+            margin: 45px 0px;
+        }
+
+        i{
+            margin-right: 18px;
+        }
+
+
+        .fila {
+            display: grid;
+        }
+        
+        .img-fluid {
+            max-width: 100%;
+            display: block; /* Para evitar espacios adicionales en imágenes inline */
+
+        }
+
+        ul{
+            list-style: none; 
+            padding-left: 0;
+        }
+
+        .banner-maestria {
+            position: relative;
+            width: 100%;
+            height: 650px; /* Ajusta la altura según necesites */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* Imagen de fondo */
+        .banner-maestria img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Overlay oscuro */
+        .banner-maestria .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Negro con opacidad */
+
+        }
+
+        /* Texto encima de la imagen */
+        .banner-maestria header {
+            position: absolute;
+            bottom: 0;
+            color: white;
+            text-align: center;
+            z-index: 2;
+            width: 100%;
+        }
+
+        .banner-maestria h1 {
+            font-size: 48px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .banner-maestria h2 {
+            font-size: 18px;
+            margin-top: 5px;
+            font-weight: normal;
+        }
+
+        /* Responsive: en móviles, ajusta tamaño del texto */
+        @media (max-width: 768px) {
+            .banner-maestria {
+                height: 500px;
+            }
+
+            .banner-maestria h1 {
+                font-size: 20px;
+            }
+
+            .banner-maestria h2 {
+                font-size: 14px;
+            }
+
+            .overlay-logo {
+                top: 150px !important;
+
+            }
+
+            .message-contact {
+                font-size: 35px !important;
+            }
+
+            section p li{
+                font-weight: 500 !important;
+                color: black !important;
+                text-align: justify;
+                font-size: 16px;
+            }
+            section p{
+                font-weight: 500 !important;
+                color: black !important;
+                text-align: justify;
+                font-size: 16px;
+            }
+        }
+
+        .overlay-logo {
+            position: absolute;
+            top: 100px !important;
+            left: 10px;
+            width: 35px; /* Se adapta entre 80px y 350px */
+            height: 10px; /* Se adapta entre 80px y 120px */
+            z-index: 2;
+        }
+        
+        .ventajas p{
+            font-size: 18px !important;
+            line-height: 1.5;
+        }
+
+        .b{
+            background-color: #a61b3b;
+            color: white;
+            padding: 15px;
+            border-radius: 50% 50%;
+        }
+        
+        .icon-circle i {
+            display: flex; /* Asegura que el ícono se alinee correctamente */
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            width: 50px;
+            height: 50px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .horarios li{
+            text-align: center;
+        }
+
+        .swiper-slide img {
+            width: 150px;  /* Ajusta el ancho según lo necesites */
+            height: 150px; /* Ajusta la altura según lo necesites */
+            object-fit: contain; /* Mantiene la proporción sin recortar */
+        }
+
+        /* Formulario  */
+
+        
+
+        /* Overlay oscuro */
+        .content-wrapper::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Capa oscura */
+        }
+
+        /* Contenedor del formulario */
+        .form-container {
+            position: relative;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.9); /* Fondo con opacidad */
+            padding: 30px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 700px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        
+
+        /* Checkbox */
+        .form-check-container {
+            grid-column: span 2;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .message-contact {
+            font-family: 'Anton', sans-serif; /* Fuente gruesa */
+            font-size: 50px;
+            font-weight: bold;
+            color: #a61b3b; /* Rojo vibrante */
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 100;
+
+            text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6), 
+                        0px 0px 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .form-check-container input {
+            width: 18px;
+            height: 18px;
+        }
+
+        /* Botón */
+        .btn-submit {
+            grid-column: span 2;
+            background: #a61b3b;
+            border: none;
+            padding: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+            color: white;
+            font-weight: 700;
+        }
+
+        .btn-submit:hover {
+            background-color: rgba(150,20,50,255);
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .form-container {
+                width: 100%;
+                padding: 20px;
+            }
+            
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            
+
+        }
+
+
+        .docentes {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+
+        /* Diseño por defecto en pantallas grandes */
+        .docente {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            overflow: hidden;
+            padding: 15px;
+            transition: 0.3s;
+            min-height: 600px;
+            background-color: white;
+            color: #a61b3b;
+        }
+
+        /* Estilos de la imagen */
+        .docente-img {
+            position: relative;
+            width: 350px;
+            height: 350px;
+            overflow: hidden;
+            border-radius: 10px;
+            display: flex; /* Asegura que el contenido se centre */
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+
+        .docente-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .overlay-logo {
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            width: 350px !important; /* Ajusta el tamaño según necesites */
+            height: 120px !important;
+            z-index: 2;
+        }
+
+        /* Información del docente */
+        .docente-info {
+            flex: 1;
+            padding: 30px 10px;
+        }
+
+        .docente-info h3 {
+            margin: 0;
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .docente-info p {
+            margin: 5px 0 0;
+            font-size: 17px;
+            opacity: 0.9;
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+        /* Responsive para móviles */
+        @media (max-width: 768px) {
+            .docente {
+                flex-direction: column; /* Hace que todos sean en columna */
+                text-align: center;
+            }
+
+            .reverse {
+                flex-direction: column-reverse; /* Solo los que tienen esta clase se invierten */
+            }
+
+            .docente-img {
+                width: 250px; /* Reduce el tamaño en pantallas pequeñas */
+                height: 250px;
+            }
+        }
+
+        /* Aplicar estilos correctamente a inputs y selects */
+            .form-grid input,
+            .form-grid select {
+                width: 100%; /* Que ocupen todo el ancho */
+                padding: 10px;
+                margin: 5px;
+            }
+
+            .btn-submit {
+                width: 100%;
+                padding: 10px;
+                background-color: #a61b3b;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+
+

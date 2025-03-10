@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPRIT - ADVOCACY</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+    <!--------------------------------CSS PARA HACER EFECTO DE LOADING-------------------------->
+    <!-- <link rel="stylesheet" href="css/loading.css"> -->
+    
+    <!---------------------------------------CSS PROPIOS------------------------------------------->
+    <link rel="stylesheet" href="../css/uprit.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/defensoria.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    
+    <!---------------------------------------------FUENTES GOOGLE------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+    
+    <!---------------------------------------------FONTAWESOME------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-------------------------------------------- CDN BOOTSTRAP 5 ------------------------------------------->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!---------------------------------------------LIBRERIA AOS (EFECTO) Y OWS (CARRUSEL)------------------------------------->
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/accesible/styles.css">
+
+    <!-------------------------------------------- SCRIPT JQUERY Y CARRUSEL ------------------------------------------->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+
+</head>
+<body >    
+    <!----------MENÚ----------->
+    <nav class="main-nav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-5 fw-bolder fs-3" href="#">UPRIT</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="autoridades.html">Autorities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="transparencia.html">Transparency</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Careers</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="administracion.html"><i class="fa-solid fa-user-tie"></i> Business Administration</a></li>
+                                <li><a class="dropdown-item" href="contabilidad.html"><i class="fa-solid fa-coins"></i> Accounting and Finance</a></li>
+                                <li><a class="dropdown-item" href="derecho.html"><i class="fa-solid fa-scale-balanced"></i> Law</a></li>
+                                <li><a class="dropdown-item" href="civil.html"><i class="fa-solid fa-helmet-safety"></i> Civil Engineering</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="informacion.html"><i class="fa-sharp fa-solid fa-universal-access"></i> Access to public information</a></li>
+                                <li><a class="dropdown-item" href="admision.html"><i class="fa-solid fa-pen-to-square"></i> Admission</a></li>
+                                <li><a class="dropdown-item" href="atencion.html"><i class="fa-solid fa-headset"></i> Attention</a></li>
+                                <li><a class="dropdown-item" href="idiomas.html"><i class="fa-solid fa-globe"></i> Language Center</a></li>
+                                <li><a class="dropdown-item" href=""><i class="fa-solid fa-shield-halved"></i> University Advocacy</a></li>
+                                <li><a class="dropdown-item" href="fondoeditorial.html"><i class="fa-sharp fa-solid fa-book"></i> Editorial background</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <input type="text" placeholder="Buscar.." class="text_input" id="Buscartexto">
+                    <button class="btn-drop-text" id="droptext" aria-label="Borrar" style="font-weight: 800;margin-left: 0;"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+        </nav>
+         <!-- abrir sidbar -->
+         <div class="leftbutton image-acces"></div>
+    </nav>
+  
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <audio controls style="display: none;">
+            <source src="../audio/en/defensoria.mp3" type="audio/mpeg">
+        </audio>
+        <div id="textos-sizes" class="square-seccion" style="margin-top: 35px;">
+            <div class="square-seccion-title" aria-label="Color de alto contraste">Text Reader</div>
+            <div class="contrast-center">
+                <button id="cuadro1"  class="cuadroimg1" aria-label="Reproducir">Play</button>
+                <button id="cuadro2"  class="cuadroimg2" aria-label="Pausar">Pause</button>
+                <button id="cuadro3"  class="cuadroimg3" aria-label="Volver ">Reset</button>
+            </div>
+        </div>
+        <div id="mulit-accesibilidad" class="square-seccion">
+            <div class="square-seccion-title" aria-label="Color de alto contraste">Accessibility</div>
+            <div class="contrast-center">
+                <button id="cuadro4" class="cuadroimg4" aria-label=" - Ocultar Imagenes - ">Hide Images
+                </button>
+                <button id="cuadro5" class="cuadroimg5"  aria-label=" - Cursor Grande - ">Large Cursor</button>
+                <button id="cuadro6" class="cuadroimg6" aria-label=" - Dislexia - " >Dyslexia</button>
+            </div>
+            <div class="contrast-center">
+                <button id="cuadro7" class="cuadroimg7" aria-label=" - Incremento de Texto - ">Increment Text
+                   <div></div>
+               </button>
+                <button id="cuadro8" class="cuadroimg8" aria-label=" - Disminuir Texto - ">Decrease Text</button>
+                <button id="cuadro9" class="cuadroimg9" aria-label=" - Guia de lectura - ">Reading Guide</button>
+            </div>
+            <div class="contrast-center">
+                <button id="cuadro10" class="cuadroimg10" aria-label=" - Aumentar Espacio - ">Increase Space
+                   <div></div>
+               </button>
+                <button id="cuadro11" class="cuadroimg11" aria-label=" - Disminuir Espacio - ">Decrease Space</button>
+                <button id="cuadro12" class="cuadroimg12" aria-label=" - Libro -">Reading Mode
+                   <!-- <div></div> -->
+                </button>
+            </div>
+        </div>
+        <div id="constrast" class="square-seccion">
+            <div class="square-seccion-title" aria-label="Color de alto contraste">High Contrast Colour</div>
+            <div class="contrast-center">
+                <button id="cuadro13" class="cuadroimg13"  aria-label=" - Alto contraste - ">High Contrast
+                </button>
+                <button id="cuadro14" class="cuadroimg14"  aria-label=" - Alto contraste - ">High Contrast</button>
+                <button id="cuadro15" class="cuadroimg15" aria-label=" - Alto contraste - ">Gray Colour</button>
+                <button id="cuadro16" class="cuadroimg15" aria-label=" - Alto contraste - ">Normal</button>
+            </div>
+        </div>
+    </div>
+   
+    <!-- end sidebar  -->    
+
+    <div  id="page">
+        <div class="container">
+            <!--MODO DISCAPACIDAD-->
+            <div class="discapacidad">
+                <!-- <div class="container-btn-mode">
+                    <div id="id-sun" class="btn-mode sun activer">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div id="id-moon" class="btn-mode moon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                </div> -->
+                <div>
+                    <p class="discapacidad_idioma"><a href="../defensoria.html">ES</a> | <a href=""><b>EN</b></a></p>
+                </div>
+            </div>
+
+
+            <!--BANNER-->
+            <div class="banner_defensoria">
+                <img src="../img/defensory.png" alt="defensoría uprit" id="logo">
+            </div>
+
+
+            <!----------------PRESENTACIÓN--------------->
+            <div class="presentacion">
+                <div class="descripcion_texto" data-aos="fade-up">
+                    <p class="titulo">Presentation</p>
+                    <p class="parrafo">The University Ombudsman of the Universidad Privada de Trujillo is the area in charge of protecting the rights of the members of the university community and ensuring the maintenance of the principle of responsible authority. It is competent to hear the reports, complaints or claims made by members of the university community related to the infringement of individual rights.</p>
+                </div>
+                <div class="presentacion_bloque" data-aos="fade-up">
+                    <div>
+                        <p class="descripcion_imagen">
+                            <img src="../img/defensora.png" alt=" defensora uprit" class="defima">
+                        </p>
+                        <hr class="linea_defensora">
+                        <p class="parrafo centrado">
+                            <i class="fa-brands fa-linkedin-in net"></i>
+                            <i class="fa-brands fa-twitter net"></i>
+                        </p>
+                    </div>
+                    <div class="descripcion_texto">
+                        <p class="titulo">The university defender</p>
+                        <p class="parrafo">Lawyer Kassandra García</p>
+                        <p class="parrafo">Candidate for a Master's degree in Law, with a mention in Constitutional and Administrative Law at the Universidad Nacional de Trujillo, Lawyer from the Universidad César Vallejo and Bachelor of Laws from the Universidad César Vallejo.</p>
+                    </div>
+                </div>
+                <div class="descripcion_texto" data-aos="fade-up">
+                    <p class="titulo">Who can attend</p>
+                    <p class="parrafo">1. Students</p>
+                    <p class="parrafo">2. Teachers</p>
+                    <p class="parrafo">3. Administrative staff</p>
+                    <p class="parrafo">4. Academic authorities</p>
+                    <p class="parrafo">5. Hired service personnel</p>
+                </div>
+
+                <div class="descripcion_texto" data-aos="fade-up">
+                    <p class="titulo">Types of complaints or complaints</p>
+                    <p class="parrafo">1. Complaints for apparent or real conflicts of interest, irregular acts, violation of the code of
+                        institutional conduct and ethics and/or acts of corruption in general, should be directed to the complaint channels of the
+                    audit and internal control office (ethical channel)</p>
+                    <p class="parrafo">2. Denunciations or complaints for violations of the code of ethics in research, including intellectual property,
+                        should be addressed to the complaint channels of the investigation department (investigation channel)
+                    </p>
+                    <p class="parrafo">3. Complaints and complaints related to the infringement of individual rights, including situations referred to
+                        to acts of sexual harassment, you should go to the complaint channels of the university ombudsman (ombudsman channel).
+                    </p>
+                    <p class="parrafo">4. For breach of the duties of information and suitability in the educational service
+                        should be directed to the physical or virtual claims book, in charge of the general management (book channel
+                        of claims)
+                    </p>
+                </div>
+
+                <!-------------------CONTÁCTANOS----------------->
+                <div data-aos="fade-up">
+                    <div class="container">
+                        <h2 class="titulo">Leave us your claim</h2>
+                        <form action="functions/contacts-process" class="formulario" id="formulario">
+                            <div class="formulario__grupo" id="grupo__mensaje">
+                                <label class="formulario__label"><p class="parrafo">Addressed to:</p></label>
+                                <div class="formulario__grupo-input">
+                                    <select name="select" class="formulario__input">
+                                        <option value="canaletico@uprit.edu.pe" selected>Ethical channel</option>
+                                        <option value="canalinvestigacion@uprit.edu.pe">Research channel</option>
+                                        <option value="canaldefensoria@uprit.edu.pe">Advocacy channel</option>
+                                        <option value="canallibroreclamo@uprit.edu.pe">Complaint book channel</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="formulario__bloque">
+                                <div class="formulario__grupo" id="grupo__nombre">
+                                    <label for="nombre" class="formulario__label"><p class="parrafo">First name:</p></label>
+                                    <div class="formulario__grupo-input">
+                                        <input type="text" class="formulario__input" name="nombre" id="nombre">
+                                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                                    </div>
+                                    <p class="formulario__input-error">The first name must be at least 2 letters with no special characters</p>
+                                </div>
+                            
+                                <div class="formulario__grupo" id="grupo__apellido">
+                                    <label for="apellido" class="formulario__label"><p class="parrafo">Second name:</p></label>
+                                    <div class="formulario__grupo-input">
+                                        <input type="text" class="formulario__input" name="apellido" id="apellido">
+                                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                                    </div>
+                                    <p class="formulario__input-error">The second name must be at least 2 letters with no special characters</p>
+                                </div>
+                                
+                                <div class="formulario__grupo" id="grupo__correo">
+                                    <label for="correo" class="formulario__label"><p class="parrafo">Email:</p></label>
+                                    <div class="formulario__grupo-input">
+                                        <input type="email" class="formulario__input" name="correo" id="correo">
+                                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                                    </div>
+                                    <p class="formulario__input-error">The email must contain @ and period (.)</p>
+                                </div>
+                                
+                                <div class="formulario__grupo" id="grupo__telefono">
+                                    <label for="telefono" class="formulario__label"><p class="parrafo">Phone:</p></label>
+                                    <div class="formulario__grupo-input">
+                                        <input type="text" class="formulario__input" name="telefono" id="telefono">
+                                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                                    </div>
+                                    <p class="formulario__input-error">The phone must contain 6 to 9 numbers</p>
+                                </div>
+                            </div>
+                            <div class="formulario__grupo" id="grupo__mensaje">
+                                <label class="formulario__label"><p class="parrafo">Select file (Optional):</p></label>
+                                <div class="formulario__grupo-input">
+                                    <input type="file" id="evidencia" name="evidencia" class="formulario_file">
+                                </div>
+                            </div>
+                            <div class="formulario__grupo" id="grupo__mensaje">
+                                <label for="mensaje" class="formulario__label"><p class="parrafo">Message:</p></label>
+                                <div class="formulario__grupo-input">
+                                    <!-- <input type="textarera" class="formulario__input" name="mensaje" id="mensaje"> -->
+                                    <textarea name="mensaje" id="mensaje" class="formulario__input formulario__textarea"></textarea>
+                                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                                </div>
+                                <p class="formulario__input-error">You must write a message</p>
+                            </div>
+                        
+                            <div class="formulario__mensaje" id="formulario__mensaje">
+                                <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Wrong:</b> Fill in all the fields</p>
+                            </div>
+                        
+                            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                                <button type="submit" name="enviar" class="formulario__btn" id="sendcorreo">Send</button>
+                                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡EMAIL SENT!</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-------------------FOOTER----------------->
+            <div data-aos="fade-up">
+                <p class="linea">
+                <div>
+                    <p class="upt">UNIVERSIDAD PRIVADA DE TRUJILLO</p>
+                </div>
+                <div class="informes">
+                    <div><i class="fa-solid fa-phone"></i> 044-2356XX</div>
+                    <div><i class="fa-solid fa-location-dot"></i> Av. Industrial km. 4 - Semirústica El Bosque</div>
+                    <div><i class="fa-solid fa-at"></i> informes@uprit.edu.pe</div>
+                </div><br>
+                <div class="redes">
+                    <a href="https://www.facebook.com/uptrujillo" target="_blank"><i class="fa-brands fa-facebook-f sociales"></i></a>
+                    <a href="https://x.com/UpritTrujillo" target="_blank"><i class="fa-brands fa-twitter sociales"></i></a>
+                    <a href="https://www.youtube.com/@uprit2166" target="_blank"><i class="fa-brands fa-youtube sociales"></i></a>
+                    <a href="https://www.instagram.com/upritrujillo/" target="_blank"><i class="fa-brands fa-instagram sociales"></i></a>
+                    <a href="https://www.linkedin.com/school/universidad-privada-de-trujillo" target="_blank"><i class="fa-brands fa-linkedin-in sociales"></i></a>
+                    <a href="https://pin.it/3zQPcsp4X" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+                <div class="redes">
+                    <p style="text-align: center;">UPRIT © 2022 - All rights reserved. <br>
+                        Dpto of Information Technologies - UPRIT</p>
+                </div>
+            </div>
+
+            <!-- https://colorlib.com/wp/bootstrap-footer/ -->
+        </div>
+         <!-- lectura -->
+         <div id="read_guide"></div>
+    </div>
+
+    <!--------------------------------JS PARA HACER EFECTO DE LOADING-------------------------->
+    <!-- <script src="js/loading.js"></script> -->
+    <script src="../js/contacto.js"></script>
+    <script>
+        $(document).ready(function() {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                margin: 10,
+                nav: true,
+                loop: true,
+                autoplay:true,
+                autoplayTimeout:5000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    300: {
+                        items: 2
+                        },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            })
+        })
+    </script>
+
+    <script>
+        function modoclaro(){
+            document.getElementById('page').classList.remove('dark-mode')
+            document.getElementById('id-moon').classList.remove('activer')
+            document.getElementById('logo').src = '../img/defensory.png'
+            this.classList.add('activer')
+        }
+        function modooscuro(){
+            document.getElementById('page').classList.add('dark-mode')
+            document.getElementById('id-sun').classList.remove('activer')
+            document.getElementById('logo').src = '../img/defensory_dark.png'
+            this.classList.add('activer')
+        }
+        
+        document.addEventListener('click', (e) => {
+            if(e.target.matches('#id-sun'))
+                modoclaro();
+            if(e.target.matches('#id-moon'))
+                modooscuro();
+        })
+    </script>
+
+    <script src="../js/aos.js"></script>
+    <!-- <script src="../js/modoscuro.js"></script> -->
+    <script>
+        AOS.init({
+            duration: 2000,
+        });
+    </script>
+
+    <script src="js/menu.js"></script>
+    <script src="../js/acceso.js"></script>
+    <script src="../js/buscar.js"></script>
+    
+</body>
+</html>

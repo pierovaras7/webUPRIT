@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="css/contacto.css">
+
+    <!---------------------------------------------FONTAWESOME------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <form action="" class="formulario" id="formulario">
+        <div class="formulario__grupo" id="grupo__nombre">
+            <label for="nombre" class="formulario__label">Nombre:</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="nombre" id="nombre">
+                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="formulario__input-error">El nombre no debe contener números ni caracteres especiales</p>
+        </div>
+        
+        <div class="formulario__grupo" id="grupo__apellido">
+            <label for="apellido" class="formulario__label">Apellido:</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="apellido" id="apellido">
+                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="formulario__input-error">El apellido no debe contener números ni caracteres especiales</p>
+        </div>
+
+        <div class="formulario__grupo" id="grupo__correo">
+            <label for="correo" class="formulario__label">Correo:</label>
+            <div class="formulario__grupo-input">
+                <input type="email" class="formulario__input" name="correo" id="correo">
+                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="formulario__input-error">El correo debe contener @ y punto (.)</p>
+        </div>
+
+        <div class="formulario__grupo" id="grupo__telefono">
+            <label for="telefono" class="formulario__label">Teléfono:</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="telefono" id="telefono">
+                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="formulario__input-error">El teléfono debe contener de 6 a 9 números</p>
+        </div>
+
+        <div class="formulario__mensaje" id="formulario__mensaje">
+            <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Llene todos los campos</p>
+        </div>
+
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button type="submit" class="formulario__btn">Enviar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡CORREO ENVIADO! <i class="fa-solid fa-circle-check"></i></p>
+        </div>
+
+        <!-- https://www.youtube.com/watch?v=cEKDyzoTXb4 -->
+        <!-- https://www.youtube.com/watch?v=s3pC93LgP18 -->
+    </form>
+
+    <script src="js/contacto.js"></script>
+</body>
+</html>

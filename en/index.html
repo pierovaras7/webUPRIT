@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPRIT - HOME</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+    <!---------------------------------------CSS PROPIOS------------------------------------------->
+    <link rel="stylesheet" href="../css/uprit.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    
+    <!---------------------------------------------FUENTES GOOGLE------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+    
+    <!---------------------------------------------FONTAWESOME------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-------------------------------------------- CDN BOOTSTRAP 5 ------------------------------------------->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!---------------------------------------------LIBRERIA AOS (EFECTO) Y OWS (CARRUSEL)------------------------------------->
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/accesible/styles.css">
+
+    <!---------------------------------------------LIBRERIA SWIPER------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <!-------------------------------------------- SCRIPT JQUERY Y CARRUSEL ------------------------------------------->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+
+    <!-------------------------------------------- SWIPER ------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <nav class="main-nav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-5 fw-bolder fs-3" href="#">UPRIT</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" aria-current="page" href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="autoridades.html">Autorities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="transparencia.html">Transparency</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Careers</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="administracion.html"><i class="fa-solid fa-user-tie"></i> Business Administration</a></li>
+                                <li><a class="dropdown-item" href="contabilidad.html"><i class="fa-solid fa-coins"></i> Accounting and Finance</a></li>
+                                <li><a class="dropdown-item" href="derecho.html"><i class="fa-solid fa-scale-balanced"></i> Law</a></li>
+                                <li><a class="dropdown-item" href="civil.html"><i class="fa-solid fa-helmet-safety"></i> Civil Engineering</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="informacion.html"><i class="fa-sharp fa-solid fa-universal-access"></i> Access to public information</a></li>
+                                <li><a class="dropdown-item" href="admision.html"><i class="fa-solid fa-pen-to-square"></i> Admission</a></li>
+                                <li><a class="dropdown-item" href="atencion.html"><i class="fa-solid fa-headset"></i> Attention</a></li>
+                                <li><a class="dropdown-item" href="idiomas.html"><i class="fa-solid fa-globe"></i> Language Center</a></li>
+                                <li><a class="dropdown-item" href="defensoria.html"><i class="fa-solid fa-shield-halved"></i> University Advocacy</a></li>
+                                <li><a class="dropdown-item" href="fondoeditorial.html"><i class="fa-sharp fa-solid fa-book"></i> Editorial background</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <input type="text" placeholder="Search.." class="text_input" id="Buscartexto">
+                    <button class="btn-drop-text" id="droptext" aria-label="Borrar" style="font-weight: 800;margin-left: 0;"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+        </nav>
+         <!-- abrir sidbar -->
+         <div class="leftbutton image-acces"></div>
+    </nav>
+
+    <!-- Sidebar -->
+     <div id="sidebar">
+        <audio controls style="display: none;">
+            <source src="../audio/en/index.mp3" type="audio/mpeg">
+        </audio>
+        <div id="textos-sizes" class="square-seccion" style="margin-top: 35px;">
+            <div class="square-seccion-title" aria-label="Color de alto contraste">Text Reader</div>
+            <div class="contrast-center">
+                <button id="cuadro1"  class="cuadroimg1" aria-label="Reproducir">Play</button>
+                <button id="cuadro2"  class="cuadroimg2" aria-label="Pausar">Pause</button>
+                <button id="cuadro3"  class="cuadroimg3" aria-label="Volver ">Reset</button>
+            </div>
+        </div>
+        <div id="mulit-accesibilidad" class="square-seccion">
+            <div class="square-seccion-title" aria-label="Color de alto contraste">Accessibility</div>
+            <div class="contrast-center">
+                <button id="cuadro4" class="cuadroimg4" aria-label=" - Ocultar Imagenes - ">Hide Images
+                </button>
+                <button id="cuadro5" class="cuadroimg5"  aria-label=" - Cursor Grande - ">Large Cursor</button>
+                <button id="cuadro6" class="cuadroimg6" aria-label=" - Dislexia - " >Dyslexia</button>
+            </div>
+            <div class="contrast-center">
+                <button id="cuadro7" class="cuadroimg7" aria-label=" - Incremento de Texto - ">Increment Text
+                   <div></div>
+               </button>
+                <button id="cuadro8" class="cuadroimg8" aria-label=" - Disminuir Texto - ">Decrease Text</button>
+                <button id="cuadro9" class="cuadroimg9" aria-label=" - Guia de lectura - ">Reading Guide</button>
+            </div>
+            <div class="contrast-center">
+                <button id="cuadro10" class="cuadroimg10" aria-label=" - Aumentar Espacio - ">Increase Space
+                   <div></div>
+               </button>
+                <button id="cuadro11" class="cuadroimg11" aria-label=" - Disminuir Espacio - ">Decrease Space</button>
+                <button id="cuadro12" class="cuadroimg12" aria-label=" - Libro -">Reading Mode
+                   <!-- <div></div> -->
+                </button>
+            </div>
+        </div>
+        <div id="constrast" class="square-seccion">
+            <div class="square-seccion-title" aria-label="Color de alto contraste">High Contrast Colour</div>
+            <div class="contrast-center">
+                <button id="cuadro13" class="cuadroimg13"  aria-label=" - Alto contraste - ">High Contrast
+                </button>
+                <button id="cuadro14" class="cuadroimg14"  aria-label=" - Alto contraste - ">High Contrast</button>
+                <button id="cuadro15" class="cuadroimg15" aria-label=" - Alto contraste - ">Gray Colour</button>
+                <button id="cuadro16" class="cuadroimg15" aria-label=" - Alto contraste - ">Normal</button>
+            </div>
+        </div>
+    </div>
+   
+    <!-- end sidebar  -->
+
+    <div  id="page">
+        <div class="container">
+            <!--MODO DISCAPACIDAD-->
+            <div class="discapacidad">
+                <!-- <div class="container-btn-mode">
+                    <div id="id-sun" class="btn-mode sun activer">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div id="id-moon" class="btn-mode moon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                </div> -->
+                <div>
+                    <p class="discapacidad_idioma"><a href="../index.html">ES</a> | <a href=""><b>EN</b></a></p>
+                </div>
+            </div>
+
+
+            <!--BANNER-->
+            <div class="banner">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide"><img src="../img/index_ingles.png" alt="la uprit" id="logo"></div>
+                      <div class="swiper-slide"><img src="../img/banner_administracion_ingles.png" alt="adminsitracion de empresas" id="logo"></div>
+                      <div class="swiper-slide"><img src="../img/banner_contabilidad_ingles.png" alt="contabilidad y finanzas" id="logo"></div>
+                      <div class="swiper-slide"><img src="../img/banner_derecho_ingles.png" alt="derecho" id="logo"></div>
+                      <div class="swiper-slide"><img src="../img/banner_civil_ingles.png" alt="ingeniería civil" id="logo"></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                  </div>
+                        <!-- <img src="img/index.png" alt="la uprit" id="logo"> -->
+                   
+                <!-- <div class="banner_capa">
+                    <p class="titulo"><a>LICENCIADA POR SUNEDU</a></p>
+                </div> -->
+            </div>
+
+            <!----------------LA UPRIT--------------->
+            <div class="descripcion" data-aos="fade-up">
+                <div class="descripcion_texto">
+                    <p class="titulo">The UPRIT</p>
+                    <p class="parrafo">The Private University of Trujillo UPRIT begins a new stage in its institutionality with new Authorities leading its educational processes, coming from the main Universities and Business Schools in Peru and the World: Oklahoma State University, USA; Telaviv University, Israel; Queen'S University, Canada, University of Quebec, Canada; National Autonomous University of Mexico UNAM, Mexico; Incae Business School, Costa Rica; ESAN University, Peru; Universidad del Pacífico, Peru, University of Piura-Udep, Peru; CENTRUM Pontifical Catholic University, Peru; National University of Trujillo, Peru.
+Private University of Trujillo UPRIT, unique in the region Licensed by Sunedu with the 2020 Licensing model of higher academic quality requirements.</p>
+                </div>
+                <div class="descripcion_pabellon">
+                    <img src="../img/edificio_uprit.png" alt="edificio-uprit">
+                </div>
+            </div>
+
+            <!-----------MISIÓN Y VISIÓN--------------->
+            <div class="mv" data-aos="fade-up">
+                <div>
+                    <div class="mv_imagen">
+                        <img src="../img/mision.png" alt="misión uprit"><br>
+                    </div>
+                    <p class="parrafo">The Universidad Privada de Trujillo provides a comprehensive and humanistic professional training of excellence, generating scientific and technological excellence, generating scientific and technological knowledge that contributes to the harmonious and sustainable and sustainable development of society, addressing the problems, challenges and social, economic, cultural, and environmental challenges that afflict it with a high spirit of and environmental problems, challenges and challenges that afflict it with a high spirit of social and ethical responsibility.</p>
+                </div>
+                <div>
+                    <div class="mv_imagen">
+                        <img src="../img/vision.png" alt="visión uprit"><br>
+                    </div>
+                    <p class="parrafo">By 2027, our University is integrated into the world, recognized for its significant contribution to human development, by responding to the demands, challenges and challenges of the environment to human development by responding to the demands, challenges and challenges of the environment, competitiveness and sustainability through the excellence of its graduates, research and innovation, acting with a high sense of responsibility research and innovation, acting with a high sense of social and ethical responsibility.</p>
+                </div>
+            </div>
+            
+            <!-----------VALORES--------------->
+            <p class="titulo" style="margin-left: 10%;" data-aos="fade-up">Valuables</p>
+            <div class="valores" data-aos="fade-up">
+                <div>
+                    <p class="parrafo">Ethical Conduct</p>
+                </div>
+                <div>
+                    <p class="parrafo">Collaborative Work and Vocation of Service </p>
+                </div>
+                <div>
+                    <p class="parrafo">Leadership and Proactivity</p>
+                </div>
+                <div>
+                    <p class="parrafo">Innovation and Creativity</p>
+                </div>
+            </div>
+
+            <!-----------FINES--------------->
+            <div class="carreras" data-aos="fade-up">
+                <div></div>
+                <div>
+                    <p class="titulo">Main purposes</p>
+                    <p class="carreras_descripcion parrafo">Universidad Privada of Trujillo in accordance with education, research, quality, social responsibility, culture, makes available the following purposes:</p>
+                    <div>
+                        <div class="carreras_division">
+                            <div class="carreras_relleno cr1">1</div>
+                            <div>
+                                <p class="parrafo">Preserve, increase and permanently transmit the scientific, technological, cultural and artistic heritage of humanity.</p>
+                            </div>
+                        </div>
+                        <div class="carreras_division">
+                            <div class="carreras_relleno cr2">2</div>
+                            <div>
+                                <p class="parrafo">Train high-quality professionals in a comprehensive manner and with a full sense of social responsibility according to the needs of the country.</p>
+                            </div>
+                        </div>
+                        <div class="carreras_division">
+                            <div class="carreras_relleno cr3">3</div>
+                            <div>
+                                <p class="parrafo">Carry out and promote scientific, technological and humanistic research, intellectual and artistic creation.</p>
+                            </div>
+                        </div>
+                        <div class="carreras_division">
+                            <div class="carreras_relleno cr4">4</div>
+                            <div>
+                                <p class="parrafo">Project its actions and services to the community to promote its change and development.</p>
+                            </div>
+                        </div>
+                        <div class="carreras_division">
+                            <div class="carreras_relleno cr1">5</div>
+                            <div>
+                                <p class="parrafo">Disseminate universal knowledge for the benefit of humanity.</p>
+                            </div>
+                        </div>
+                        <div class="carreras_division">
+                            <div class="carreras_relleno cr2">6</div>
+                            <div>
+                                <p class="parrafo">Promote human and sustainable development at the local, regional, national and global levels.</p>
+                            </div>
+                        </div>
+                        <div class="carreras_division">
+                            <div class="carreras_relleno cr3">7</div>
+                            <div>
+                                <p class="parrafo">Serve humanity and integral development.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--BENEFICIOS-->
+            <!-- <div class="beneficios" data-aos="fade-up">
+                <div class="beneficios_descripcion">
+                    <p class="titulo">
+                        Research and studyng at Universidad Privada of Trujillo
+                    </p>
+                    <p class="parrafo">The best minds have been able to develop their potential at Universidad Privada of Trujillo. Learn more about our strategy in the competition for excellence. Discover our Transdisciplinary Research Areas. Learn about our transversal tasks to improve equal opportunities and sustainability within the scientific community. Welcome to UPRIT, welcome to your future.</p>
+                </div>
+                <div class="beneficios_detalle">
+                    <div>
+                        <img src="../img/excelencia_academica.png" alt="excelencia-uprit">
+                        <p class="parrafo centrado">Academic excellence</p>
+                    </div>
+                    <div>
+                        <img src="../img/investigacion_uprit.png" alt="investigacion-uprit">
+                        <p class="parrafo centrado">Quality research</p>
+                    </div>
+                    <div>
+                        <img src="../img/genero_uprit.png" alt="equidad-uprit">
+                        <p class="parrafo centrado">Equal opportunities</p>
+                    </div>
+                    <div>
+                        <img src="../img/responsabilidad_uprit.png" alt="responsabilidad-uprit">
+                        <p class="parrafo centrado">Social responsability</p>
+                    </div>
+                </div>
+            </div> -->
+
+
+            <!--CARRERAS PROFESIONALES-->
+            <div>
+                <div class="carreras2" data-aos="fade-up">
+                    <div>
+                        <p class="carreras2_titulo">Business Administration</p>
+                        <div class="carreras2_separacion">
+                            <div class="carreras2_bloques superior">
+                                <div>
+                                    <p class="carreras_linea"></p>
+                                </div>
+                                <div>
+                                    <p class="parrafo">By studying business administration at UPRIT you will be able to improve productivity, quality, costs, administration as well as production time, worker and trust relationships to continuously and efficiently improve the competitiveness of a company.</p>
+                                </div>
+                            </div>
+                            <div class="carreras2_bloques likes">
+                                <p>
+                                    <i class="fa-solid fa-thumbs-up"></i> 2.5k 
+                                    <i class="fa-solid fa-comment"></i> 1.8k
+                                    <a href="">See more ...</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imagen1">
+                        <!-- <img src="../img/responsive.png" alt=""> -->
+                    </div>
+                </div>
+                <div class="carreras2" data-aos="fade-up">
+                    <div class="imagen2">
+                        
+                    </div>
+                    <div>
+                        <p class="carreras2_titulo">Accounting and Finance</p>
+                        <div class="carreras2_separacion">
+                            <div class="carreras2_bloques superior">
+                                <div>
+                                    <p class="carreras_linea"></p>
+                                </div>
+                                <div>
+                                    <p class="parrafo">The professional graduated from the Accounting and Finance career will be a professional willing to propose improvements and changes in the operational, commercial and promotional structures of companies.</p>
+                                </div>
+                            </div>
+                            <div class="carreras2_bloques likes">
+                                <p>
+                                    <i class="fa-solid fa-thumbs-up"></i> 2.2k 
+                                    <i class="fa-solid fa-comment"></i> 1.4k
+                                    <a href="">See more ...</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carreras2" data-aos="fade-up">
+                    <div>
+                        <p class="carreras2_titulo">Law</p>
+                        <div class="carreras2_separacion">
+                            <div class="carreras2_bloques superior">
+                                <div>
+                                    <p class="carreras_linea"></p>
+                                </div>
+                                <div>
+                                    <p class="parrafo">The teaching of law at UPRIT is developed under the constructivist approach, analyzing cases, solving problems and doing role plays, developing the skills that a lawyer should have today.</p>
+                                </div>
+                            </div>
+                            <div class="carreras2_bloques likes">
+                                <p>
+                                    <i class="fa-solid fa-thumbs-up"></i> 3.2k 
+                                    <i class="fa-solid fa-comment"></i> 2.5k
+                                    <a href="">See more ...</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imagen3">
+                        
+                    </div>
+                </div>
+                <div class="carreras2" data-aos="fade-up">
+                    <div class="imagen4">
+                        
+                    </div>
+                    <div>
+                        <p class="carreras2_titulo">Civil Engineering</p>
+                        <div class="carreras2_separacion">
+                            <div class="carreras2_bloques superior">
+                                <div>
+                                    <p class="carreras_linea"></p>
+                                </div>
+                                <div>
+                                    <p class="parrafo">UPRIT trains trained professionals to apply engineering laws, principles, techniques, methods and systems to conceptualize, propose, represent, analyze, evaluate, build, conserve and operate civil infrastructure plans and projects.</p>
+                                </div>
+                            </div>
+                            <div class="carreras2_bloques likes">
+                                <p>
+                                    <i class="fa-solid fa-thumbs-up"></i> 3.9k 
+                                    <i class="fa-solid fa-comment"></i> 3.6k
+                                    <a href="">See more ...</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-----------SERVICIOS QUE SE BRINDA----------->
+            <div data-aos="fade-up">
+                <p class="titulo">Services we offer</p>
+                <div class="servicios" data-aos="fade-up">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="item_img">
+                                <img src="../img/servicio_aula.png" >
+                            </div>
+                            <p class="noticias__fecha parrafo">Virtual Classroom</p>
+                            <p class="parrafo">Digital environment in which the exchange of knowledge that makes learning possible takes place</p>
+                            <p class="parrafo"><a href="http://uprit.edu.pe/moodle/">Click me</a></p>
+                        </div>
+                        <div class="item">
+                            <div class="item_img">
+                                <img src="../img/servicio_mail.png">
+                            </div>
+                            <p class="noticias__fecha parrafo">Institutional Mail</p>
+                            <p class="parrafo">Corporate messaging tool that the university has with its own domain (@uprit.edu.pe)</p>
+                            <p class="parrafo"><a href="https://www.gmail.com">Click me</a></p>
+                        </div>
+                        <div class="item">
+                            <div class="item_img">
+                                <img src="../img/servicio_erp.png">
+                            </div>
+                            <p class="noticias__fecha parrafo">ERP UPRIT</p>
+                            <p class="parrafo">Integrated system that controls all process flows of the university, with access for teachers, students and administrators</p>             
+                            <p class="parrafo"><a href="http://www.pyruserp.com/uprit/login">Click me</a></p>
+                        </div>
+                        <div class="item">
+                            <div class="item_img">
+                                <img src="../img/servicio_biblioteca.png">
+                            </div>
+                            <p class="noticias__fecha parrafo">Virtual Library</p>
+                            <p class="parrafo">Platform with digital content that provides content, bibliographic services and various documents</p>
+                            <p class="parrafo"><a href="">Click me</a></p>
+                        </div>
+                        <div class="item">
+                            <div class="item_img">
+                                <img src="../img/servicio_repositorio.png">
+                            </div>
+                            <p class="noticias__fecha parrafo">Repository - ALICIA</p>
+                            <p class="parrafo">Digital platform where works derived from scientific or academic production are deposited and stored in digital format</p>
+                            <p class="parrafo"><a href="http://repositorio.uprit.edu.pe/">Click me</a></p>
+                        </div>
+                        <div class="item">
+                            <div class="item_img">
+                                <img src="../img/servicio_convenio.png">
+                            </div>
+                            <p class="noticias__fecha parrafo">Institutional Agreements</p>
+                            <p class="parrafo">Strategic alliances with various companies in the region to reach students and professionals graduated from this house of study</p>
+                            <p class="parrafo"><a href="">Click me</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-------------------SUNEDU----------------->
+            <div data-aos="fade-up">
+                <div class="container">
+                    <h2 class="titulo">Universities licensed by SUNEDU</h2>
+                    <a href="https://www.sunedu.gob.pe/lista-de-universidades-licenciadas/" target="_blank"><img src="../img/sunedu.png" alt="sunedu" ></a>
+                </div>
+             </div>
+
+            <!-------------------CONTÁCTANOS----------------->
+            <div data-aos="fade-up">
+                <div class="container">
+                    <h2 class="titulo">Contact us</h2>
+                    <form action="" class="formulario" id="formulario">
+                        <div class="formulario__bloque">
+                            <div class="formulario__grupo" id="grupo__nombre">
+                                <label for="nombre" class="formulario__label"><p class="parrafo">First name:</p></label>
+                                <div class="formulario__grupo-input">
+                                    <input type="text" class="formulario__input" name="nombre" id="nombre">
+                                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                                </div>
+                                <p class="formulario__input-error">The first name must be at least 2 letters with no special characters</p>
+                            </div>
+                           
+                            <div class="formulario__grupo" id="grupo__apellido">
+                                <label for="apellido" class="formulario__label"><p class="parrafo">Last name:</p></label>
+                                <div class="formulario__grupo-input">
+                                    <input type="text" class="formulario__input" name="apellido" id="apellido">
+                                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                                </div>
+                                <p class="formulario__input-error">The last name must be at least 2 letters with no special characters</p>
+                            </div>
+                            
+                            <div class="formulario__grupo" id="grupo__correo">
+                                <label for="correo" class="formulario__label"><p class="parrafo">Email:</p></label>
+                                <div class="formulario__grupo-input">
+                                    <input type="email" class="formulario__input" name="correo" id="correo">
+                                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                                </div>
+                                <p class="formulario__input-error">The email must contain @ and point (.)</p>
+                            </div>
+                            
+                            <div class="formulario__grupo" id="grupo__telefono">
+                                <label for="telefono" class="formulario__label"><p class="parrafo">Phone Number:</p></label>
+                                <div class="formulario__grupo-input">
+                                    <input type="text" class="formulario__input" name="telefono" id="telefono">
+                                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                                </div>
+                                <p class="formulario__input-error">The telephone must contain 6 to 9 numbers</p>
+                            </div>
+                        </div>
+                        
+                        <div class="formulario__grupo" id="grupo__mensaje">
+                            <label for="mensaje" class="formulario__label"><p class="parrafo">Message:</p></label>
+                            <div class="formulario__grupo-input">
+                                <!-- <input type="textarera" class="formulario__input" name="mensaje" id="mensaje"> -->
+                                <textarea name="mensaje" id="mensaje" class="formulario__input formulario__textarea"></textarea>
+                                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                            </div>
+                            <p class="formulario__input-error">You must write a message</p>
+                        </div>
+                       
+                        <div class="formulario__mensaje" id="formulario__mensaje">
+                            <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Fill in all fields</p>
+                        </div>
+                    
+                        <div class="formulario__grupo formulario__grupo-btn-enviar">
+                            <button type="submit" class="formulario__btn" id="sendcorreo">Enviar</button>
+                            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">EMAIL SENT!</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-------------------FOOTER----------------->
+            <div data-aos="fade-up">
+                <p class="linea"></p>
+                <div>
+                    <p class="upt">UNIVERSIDAD PRIVADA DE TRUJILLO</p>
+                </div>
+                <div class="informes">
+                    <div><i class="fa-solid fa-phone"></i> 044-2356XX</div>
+                    <div><i class="fa-solid fa-location-dot"></i> Av. Industrial km. 4 - Semirústica El Bosque</div>
+                    <div><i class="fa-solid fa-at"></i> informes@uprit.edu.pe</div>
+                </div><br>
+                <div class="redes">
+                    <a href="https://www.facebook.com/uptrujillo" target="_blank"><i class="fa-brands fa-facebook-f sociales"></i></a>
+                    <a href="https://x.com/UpritTrujillo" target="_blank"><i class="fa-brands fa-twitter sociales"></i></a>
+                    <a href="https://www.youtube.com/@uprit2166" target="_blank"><i class="fa-brands fa-youtube sociales"></i></a>
+                    <a href="https://www.instagram.com/upritrujillo/" target="_blank"><i class="fa-brands fa-instagram sociales"></i></a>
+                    <a href="https://www.linkedin.com/school/universidad-privada-de-trujillo" target="_blank"><i class="fa-brands fa-linkedin-in sociales"></i></a>
+                    <a href="https://pin.it/3zQPcsp4X" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+                <div class="redes">
+                    <p style="text-align: center;">UPRIT © 2022 - All rights reserved. <br>
+                        Area of Information Technologies - UPRIT</p>
+                </div>
+            </div>
+        </div>
+          <!-- lectura -->
+          <div id="read_guide"></div>
+    </div>
+
+
+    <script src="../js/contacto.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                margin: 10,
+                nav: true,
+                loop: true,
+                autoplay:true,
+                autoplayTimeout:5000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    300: {
+                        items: 2
+                        },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            })
+        })
+    </script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            autoplay: {
+                delay: 3000,
+            },
+            direction: 'horizontal',
+            loop: true,
+            effect: 'cube',
+
+            //https://www.youtube.com/watch?v=bMy-mnqBtPk
+            //https://swiperjs.com/swiper-api#parameters
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+
+    <script>
+        function modoclaro(){
+            document.getElementById('page').classList.remove('dark-mode')
+            document.getElementById('id-moon').classList.remove('activer')
+            document.getElementById('logo').src = '../img/uprit_main.png'
+            this.classList.add('activer')
+        }
+        function modooscuro(){
+            document.getElementById('page').classList.add('dark-mode')
+            document.getElementById('id-sun').classList.remove('activer')
+            document.getElementById('logo').src = '../img/index_main_dark.png'
+            this.classList.add('activer')
+        }
+        
+        document.addEventListener('click', (e) => {
+            if(e.target.matches('#id-sun'))
+                modoclaro();
+            if(e.target.matches('#id-moon'))
+                modooscuro();
+        })
+    </script>
+
+    <script src="../js/aos.js"></script>
+    <!-- <script src="../js/modoscuro.js"></script> -->
+    <script>
+        AOS.init({
+            duration: 2000,
+        });
+    </script>
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/acceso.js"></script>
+    <script src="../js/buscar.js"></script>
+
+    <!------------------------------------- VOLVER A ACTIVARLO, NO OLVIDAR ------------------------------>
+    <!-- <script src="../js/sendEmail.js"></script> -->
+</body>
+</html>

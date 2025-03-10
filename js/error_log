@@ -1,0 +1,24 @@
+[24-Nov-2024 16:16:30 UTC] PHP Parse error:  syntax error, unexpected '$nombres' (T_VARIABLE) in /home/uprit15trujillo/public_html/web/js/envioCorreo.php on line 8
+[24-Nov-2024 16:19:43 UTC] PHP Notice:  Undefined index: document_tipo in /home/uprit15trujillo/public_html/web/js/envioCorreo.php on line 6
+[24-Nov-2024 16:19:43 UTC] PHP Notice:  Undefined index: document_nro in /home/uprit15trujillo/public_html/web/js/envioCorreo.php on line 7
+[24-Nov-2024 16:19:43 UTC] PHP Notice:  Undefined index: nombres in /home/uprit15trujillo/public_html/web/js/envioCorreo.php on line 8
+[24-Nov-2024 16:19:43 UTC] PHP Notice:  Undefined index: apellidos in /home/uprit15trujillo/public_html/web/js/envioCorreo.php on line 9
+[24-Nov-2024 16:19:43 UTC] PHP Notice:  Undefined index: correo in /home/uprit15trujillo/public_html/web/js/envioCorreo.php on line 10
+[24-Nov-2024 16:19:43 UTC] PHP Notice:  Undefined index: codigo_pais in /home/uprit15trujillo/public_html/web/js/envioCorreo.php on line 11
+[24-Nov-2024 16:19:43 UTC] PHP Notice:  Undefined index: celular in /home/uprit15trujillo/public_html/web/js/envioCorreo.php on line 12
+[24-Nov-2024 16:19:43 UTC] PHP Notice:  Undefined index: programa in /home/uprit15trujillo/public_html/web/js/envioCorreo.php on line 13
+[24-Nov-2024 16:19:43 UTC] PHP Notice:  Undefined index: carrera in /home/uprit15trujillo/public_html/web/js/envioCorreo.php on line 14
+[24-Nov-2024 16:19:43 UTC] PHP Notice:  Undefined index: campus in /home/uprit15trujillo/public_html/web/js/envioCorreo.php on line 15
+[24-Nov-2024 16:19:43 UTC] PHP Notice:  Undefined index: archivo in /home/uprit15trujillo/public_html/web/js/envioCorreo.php on line 18
+[24-Nov-2024 16:19:43 UTC] PHP Notice:  Undefined index: archivo in /home/uprit15trujillo/public_html/web/js/envioCorreo.php on line 19
+[24-Nov-2024 16:19:43 UTC] PHP Notice:  Undefined variable: puesto in /home/uprit15trujillo/public_html/web/js/envioCorreo.php on line 66
+[24-Nov-2024 17:35:46 UTC] PHP Notice:  Undefined variable: puesto in /home/uprit15trujillo/public_html/web/js/envioCorreo.php on line 66
+[24-Nov-2024 17:43:26 UTC] PHP Notice:  Use of undefined constant document - assumed 'document' in /home/uprit15trujillo/public_html/web/js/envioCorreo.php on line 71
+[24-Nov-2024 17:43:26 UTC] PHP Fatal error:  Call to undefined function write() in /home/uprit15trujillo/public_html/web/js/envioCorreo.php on line 71
+[24-Nov-2024 17:45:17 UTC] PHP Fatal error:  Call to undefined function setTimeout() in /home/uprit15trujillo/public_html/web/js/envioCorreo.php on line 72
+[24-Nov-2024 17:49:57 UTC] PHP Fatal error:  Call to undefined function setTimeout() in /home/uprit15trujillo/public_html/web/js/envioCorreo.php on line 73
+[24-Nov-2024 17:50:34 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/uprit15trujillo/public_html/web/js/envioCorreo.php on line 70
+[24-Nov-2024 17:53:25 UTC] PHP Fatal error:  Call to undefined function setTimeout() in /home/uprit15trujillo/public_html/web/js/envioCorreo.php on line 73
+[24-Nov-2024 22:45:14 UTC] PHP Notice:  Use of undefined constant window - assumed 'window' in /home/uprit15trujillo/public_html/web/js/envioCorreo.php on line 53
+[24-Nov-2024 22:45:14 UTC] PHP Fatal error:  Call to undefined function alert() in /home/uprit15trujillo/public_html/web/js/envioCorreo.php on line 53
+[24-Nov-2024 22:47:21 UTC] PHP Fatal error:  Call to undefined function alert() in /home/uprit15trujillo/public_html/web/js/envioCorreo.php on line 53

@@ -1,0 +1,87 @@
+/******************************AUTORIDADES*************************************************/
+/*.autoridades{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 30px auto;
+    color: white;
+}
+
+.autoridades_bloque{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: #550018;
+}
+
+.autoridades_linea{
+    border-top: 2px solid white;
+    width: 30%;
+    margin: auto;
+}
+
+.autoridades_detalle{
+    text-align: center;
+    background: #550018;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.autoridades img{
+    width: 100%;
+    height: 100%;
+}*/
+
+.autoridades{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.autoridades_bloque{
+    border: 1px solid rgb(216, 196, 196);
+    background: white;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(177, 165, 165, 0.75);
+    -moz-box-shadow: 3px 3px 3px 0px rgba(177, 165, 165, 0.75);
+    box-shadow: 3px 3px 3px 0px rgba(177, 165, 165, 0.75);
+}
+
+.autoridades_imagen{
+    text-align: center;
+}
+
+.autoridades_bloque img{   
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: auto;
+}
+
+.net{
+    background: rgba(177, 165, 165, 0.75);
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.net:hover{
+    transition: all ease 1s;
+    cursor: pointer;
+    background: rgba(177, 165, 165, 1);
+    color: white;
+}
+
+.faw{
+    width: 15px;
+    height: auto;
+    color: red;
+}
+/******************************RESPONSIVE*************************************************/
+@media (max-width: 640px) {
+    .autoridades{
+        display: flex;
+    }
+}

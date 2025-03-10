@@ -1,0 +1,96 @@
+/****************************OPCIONES DE DISCAPACIDAD***************************************************/
+.container-btn-mode{
+    /* right: 30px; */
+    font-size:0;
+}
+
+.btn-mode{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    border:2px solid black;
+    transition: background-color 1s;
+}
+
+.btn-mode i {
+    display: block;
+    font-size: 17px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.btn-mode.sun{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: 1px solid transparent;
+}
+
+.btn-mode.moon{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.activer{
+    background-color:black;
+    color:#ffcd5c !important;
+}
+
+/******************************************MODO OSCURO*******************************************/
+.dark-mode{
+    background-color: #000000;
+    transition:background-color 1s;
+}
+
+.dark-mode p, .dark-mode p a, .dark-mode .footer i{
+    color:white;
+}
+
+.dark-mode .autoridades_bloque, .dark-mode .servicios, .dark-mode .infocontacto, .dark-mode .oficina_bloque{
+    background-color: black;
+    border: 1px solid white;
+    box-shadow: 3px 3px 3px 0px rgba(255,255,255,0.5);
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(255,255,255,0.5);
+    -moz-box-shadow: 3px 3px 3px 0px rgba(255,255,255,0.5);
+}
+
+.dark-mode .autoridades_detalle{
+    background-color: black;
+}
+
+.dark-mode .btn-mode, .dark-mode .presentacion_bloque2{
+    background-color:black;
+    border:1px solid white;
+    color:white;
+}
+
+.dark-mode hr, .dark-mode .perfil{
+    color: white;
+}
+
+.dark-mode .carreras_linea{
+    border-color: white;
+}
+
+.dark-mode .carreras2 p a, .dark-mode .item p a, .dark-mode .title{
+    background: white;
+    color: black;
+}
+
+.dark-mode .oficina_bloque .title .parrafo{
+    color: black;
+}
+
+.dark-mode .carreras2 p a:hover, .dark-mode .item p a:hover{
+    background: black;
+    color: white;
+    border: 2px solid white;
+    font-size: 22px;
+}
+
+.dark-mode .footer_redes i:hover{
+    cursor: pointer;
+    color: white;
+    transform: scale(2);
+    transition: all ease 2.5s;
+}

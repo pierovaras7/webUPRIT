@@ -1,0 +1,220 @@
+/*************PRESENTACION********************************/
+.presentacion{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    width: 90%;
+    margin: auto;
+    column-gap: 40px;
+}
+
+.presentacion_bloque2{
+    padding: 20px;
+    border: 1px solid #550018;
+    border-radius: 20px;
+    /* background: rgba(245, 235, 235, 0.5); */  
+    background: #550018;
+    color: white;
+}
+
+.presentacion_bloque2 a{
+    text-decoration: none;
+    color: white;
+}
+
+.presentacion_bloque2 a:hover {
+    text-decoration: none;
+    color: #5DADE2;
+}
+
+.presentacion_detalle{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+.presentacion_detalle .parrafo{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.negrita{
+    font-weight: bolder;
+}
+
+/*************DIRECTOR DE CARRERA********************************/
+.director{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.director_titulo{
+    color: #093b6d;
+    font-weight: bolder;
+}
+
+.director_linea{
+    border-top: 3px solid #093b6d;
+    width: 60%;
+}
+/* .director_separacion{
+    display: flex;
+    flex-direction: column;
+} */
+.director_bloques{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.director_bloques a{
+    text-decoration: none;
+    background: #093b6d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+}
+
+.director_bloques a:hover{
+    background: white;
+    color: #093b6d;
+    transition: all ease-in-out 1.5s;
+    border: 1px solid #093b6d;
+}
+
+.director img{
+    width: 90%;
+    height: 90%;
+    padding: 20px;
+}
+
+/*************PERFIL DEL EGRESADO********************************/
+.perfil{
+    /* display: grid;
+    grid-template-columns: 3fr 1fr; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.perfil_bloques{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.perfil_bloques ul{
+    list-style-type: square;
+}
+
+.perfil_bloques ul li{
+    color: #808080;
+}
+/*************OFICINA - CONTACTO DE LA CARRERA********************************/
+.oficina{
+    width: 80%;
+    margin: auto;
+    /*margin-left: 7%;*/
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    /*grid-template-columns: 2fr 3fr;*/
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+}
+
+.oficina_bloque{
+    /* border: 1px solid gray; */
+    display: flex;
+    flex-direction: column;
+}
+
+.oficina_bloque .parrafo{
+    padding-left: 10px;  
+}
+
+.title .parrafo{
+    /* background: #F5F5F5;*/
+    /* border-bottom: 1px solid gray; */
+    font-weight: bolder;
+    color: #550018;
+}
+
+.subtitle{
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/*************DOCENTES DE LA CARRERA********************************/
+.foto_docente{
+    border-radius: 50%;
+}
+
+.swiper{
+    height: 200px;
+}
+
+.profesores{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: 1px solid #550018;
+}
+
+.profesores_carrera{
+    background: #550018;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.sara{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*************MODO RESPONSIVE********************************/
+@media (max-width: 640px) {
+    .presentacion{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .director, .perfil_bloques{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .director_foto{
+        display: none;
+    }
+
+    .oficina{
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+        width: 100%;
+    }
+
+    .perfil{
+        display: flex;     
+    }
+
+    .linkedin{
+        font-size: 14px;
+    }
+}
+
+/*
+https://www.eoi.es/es/cursos/23401/master-en-big-data-business-analytics-madrid?
+https://www.ua.es/      (EJEMPLO PARA PORTAL DE TRANSPARENCIA)
+*/

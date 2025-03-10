@@ -1,0 +1,166 @@
+/**************************************************MENU********************************************************/
+.main-nav{
+    margin-top: 20px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; */
+    position: fixed;
+    top: -20px;
+    z-index: 1000;
+    width: 100%;
+    background: white;
+}
+
+.principal{
+    color: rgb(53, 51, 51);
+    font-size: 17px;
+}
+
+/*.menu{
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 0; 
+    display: flex;  
+    justify-content: flex-end;
+}
+
+.menu a{
+    color: gray;
+}
+
+.menu__link{
+    display: block;
+    padding: 18px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+}
+
+.menu__link::before{
+    content: "";
+    width: 0;
+    bottom: 0;
+    height: 1.5px;
+    background: #550018;
+    position: absolute;
+    transition: all 1.5s ;
+}
+
+.menu__link:hover::before{
+    width: 75%;
+}
+
+.menu__link:hover{
+    color: #550018;
+    transition: all 1.5s ease-in-out;
+    
+}*/
+
+.last{
+    width: 100px;
+}
+
+/********************Creando css para k sea llamado por el menu.js *************************************************/
+.mostrar{
+    margin-left: 0;
+}
+
+.menu{
+    transition: all 0.5s;   /*este css ya existe mas arriba y es efecto para k se muestre en 0.3 seg*/
+}
+
+@media (max-width: 300px) {
+    .main-nav{
+        position: inherit;
+        margin-top: 0px;
+    }
+    /*.main-nav ul{
+        margin-top: 0;
+    }
+    .menu{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }*/
+    .ordenar{
+        order: -1;
+    }
+    /*.menu__link{
+        padding-top: 3px;
+        padding-bottom: 3px;
+        margin-top: 0;
+    }*/
+    .discapacidad{
+        margin-top: 0;
+    }
+}
+
+
+
+/*.navegacion{
+    display: none;
+}
+
+.hamburguesa i{
+    position: fixed;
+    
+    right: 30px;
+    background: white;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+    z-index: 1000;
+}
+
+.menu-navegacion{
+    position: fixed;
+    z-index: 1000;
+    top: 63px;
+    right: 0;
+    width: 30%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+}
+
+.menu-navegacion a{
+    padding: 10px;
+    width: 90%;
+    color: #550018;
+    text-decoration: none;
+}*/
+
+.spread{
+    transform: translate(-15%);
+}
+
+/*.menu-navegacion a:hover{
+    background: #550018;
+    color: white;
+}
+
+@media (max-width: 640px) {
+    .navegacion{
+        display: flex;
+    }
+
+    .main-nav{
+        display: none;
+    }
+
+    #page{
+        margin-top: 55px;
+    }
+}*/
+
+

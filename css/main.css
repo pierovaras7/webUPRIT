@@ -1,0 +1,39 @@
+h1{
+    color: brown;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+}
+
+.poke{
+    margin-top: 10px;
+    margin-bottom: 10px;    
+}
+
+/*******************************************************************/
+.contenedor{
+    display: flex;
+    flex-direction: row /*| row-reverse | column | column-reverse*/;
+    justify-content: flex-end /*| flex-start | center | space-around | space-between*/;
+    align-items: center /*| flex-end | flex-start*/;
+    /*centra el texto dentro de su contenedor pero a su vez reduce la altura del mismo contenedor*/
+}
+
+.flex{
+    width: 30%;
+    border: 2px solid rebeccapurple;
+    margin: 10px;
+    
+}
+
+@media (max-width: 768px){  /* De 0 - 768px */
+    .contenedor{
+        flex-direction: column;
+    }
+}
+
+/*******************************************************************/
+

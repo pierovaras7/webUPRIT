@@ -1,0 +1,80 @@
+/****************************************VACANTES***************************************************/
+.vacantes{
+    margin: auto;
+    margin-bottom: 80px;
+    width: 90%;
+}
+
+.vacantes_fila{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    gap: 30px;
+}
+
+.vacantes_carrera{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid #550018;
+    box-shadow: 5px 5px 5px 0px rgba(177, 165, 165, 0.75);
+    padding: 10px;
+}
+
+.vacantes_carrera small{
+    font-style: italic;
+}
+
+.vacantes_numero{
+    border: 3px solid #550018;
+    box-shadow: 5px 5px 5px 0px rgba(177, 165, 165, 0.75);
+    width: auto;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 25px;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    color: #550018;
+}
+
+@media (max-width: 540px) {
+    .vacantes_fila{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/****************************************MODALIDADES***************************************************/
+.modalidades{
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+}
+
+.modalidades ul{
+    list-style-type: square;
+}
+
+/****************************************REQUISITOS***************************************************/
+.requisitos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+}
+
+.requisitos ul{
+    list-style-type: square;
+}
+
+@media (max-width: 640px) {
+    .requisitos{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.inform{
+    margin-bottom: 50px;
+}

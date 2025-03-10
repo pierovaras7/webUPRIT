@@ -1,0 +1,66 @@
+.fondo{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.fondo_bloque{
+    border: 1px solid rgb(216, 196, 196);
+    background: white;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(177, 165, 165, 0.75);
+    -moz-box-shadow: 3px 3px 3px 0px rgba(177, 165, 165, 0.75);
+    box-shadow: 3px 3px 3px 0px rgba(177, 165, 165, 0.75);
+}
+
+.fondo_imagen{
+    text-align: center;
+    
+}
+
+.fondo_bloque img{   
+    border-radius: 5%;
+    margin-top: 20px;
+    margin-left: auto;
+    width: 60%;
+    height: 400px;
+
+}
+
+.net{
+    background: rgba(177, 165, 165, 0.75);
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.net:hover{
+    transition: all ease 1s;
+    cursor: pointer;
+    background: rgba(177, 165, 165, 1);
+    color: white;
+}
+
+.faw{
+    width: 15px;
+    height: auto;
+    color: red;
+}
+/******************************RESPONSIVE*************************************************/
+@media (max-width: 640px) {
+    .autoridades{
+        display: flex;
+    }
+}
+
+/******************************IDIOMAS*************************************************/
+.banner{
+    width: 80%;
+    margin: center;
+    width: auto;
+    height: auto;
+}

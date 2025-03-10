@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPRIT - ACCOUNTING AND FINANCE</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    
+   <!-------------------------------------------- CSS PROPIOS ------------------------------------------->
+   <link rel="stylesheet" href="../css/uprit.css">
+   <link rel="stylesheet" href="../css/menu.css">
+   <link rel="stylesheet" href="../css/carreras.css">
+   <link rel="stylesheet" href="../css/footer.css">
+   
+   <!---------------------------------------------FUENTES GOOGLE------------------------------------->
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+
+   <!---------------------------------------------FONTAWESOME------------------------------------->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <!-------------------------------------------- CDN BOOTSTRAP 5 ------------------------------------------->
+   <link rel="stylesheet" href="../css/bootstrap.css">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+   <!---------------------------------------------LIBRERIA AOS (EFECTO) Y OWS (CARRUSEL)------------------------------------->
+   <link rel="stylesheet" href="../css/aos.css">
+   <!-- <link rel="stylesheet" href="../css/owl.carousel.min.css"> -->
+   <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="../css/accesible/styles.css">
+
+    <!---------------------------------------------CSS SWIPER------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+   <!-------------------------------------------- SCRIPT JQUERY Y CARRUSEL ------------------------------------------->
+   <script src="../js/jquery.min.js"></script>
+   <!-- <script src="../js/owl.carousel.min.js"></script> -->
+</head>
+<body>
+   <!----------MENÚ----------->
+   <nav class="main-nav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-5 fw-bolder fs-3" href="#">UPRIT</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" aria-current="page" href="index.php">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="autoridades.html">Autorities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="transparencia.html">Transparency</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Careers</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="administracion.html"><i class="fa-solid fa-user-tie"></i> Business Administration</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-coins"></i> Accounting and Finance</a></li>
+                                <li><a class="dropdown-item" href="derecho.html"><i class="fa-solid fa-scale-balanced"></i> Law</a></li>
+                                <li><a class="dropdown-item" href="civil.html"><i class="fa-solid fa-helmet-safety"></i> Civil Engineering</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="informacion.html"><i class="fa-sharp fa-solid fa-universal-access"></i> Access to public information</a></li>
+                                <li><a class="dropdown-item" href="admision.html"><i class="fa-solid fa-pen-to-square"></i> Admission</a></li>
+                                <li><a class="dropdown-item" href="atencion.html"><i class="fa-solid fa-headset"></i> Attention</a></li>
+                                <li><a class="dropdown-item" href="idiomas.html"><i class="fa-solid fa-globe"></i> Language Center</a></li>
+                                <li><a class="dropdown-item" href="defensoria.html"><i class="fa-solid fa-shield-halved"></i> University Advocacy</a></li>
+                                <li><a class="dropdown-item" href="fondoeditorial.html"><i class="fa-sharp fa-solid fa-book"></i> Editorial background</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <input type="text" placeholder="Search.." class="text_input" id="Buscartexto">
+                    <button class="btn-drop-text" id="droptext" aria-label="Borrar" style="font-weight: 800;margin-left: 0;"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+        </nav>
+        <!-- abrir sidbar -->
+        <div class="leftbutton image-acces"></div>
+    </nav>
+
+   <!-- Sidebar -->
+   <div id="sidebar">
+        <audio controls style="display: none;">
+            <source src="../audio/en/contabilidad.mp3" type="audio/mpeg">
+        </audio>
+        <div id="textos-sizes" class="square-seccion" style="margin-top: 35px;">
+            <div class="square-seccion-title" aria-label="Color de alto contraste">Text Reader</div>
+            <div class="contrast-center">
+                <button id="cuadro1"  class="cuadroimg1" aria-label="Reproducir">Play</button>
+                <button id="cuadro2"  class="cuadroimg2" aria-label="Pausar">Pause</button>
+                <button id="cuadro3"  class="cuadroimg3" aria-label="Volver ">Reset</button>
+            </div>
+        </div>
+        <div id="mulit-accesibilidad" class="square-seccion">
+            <div class="square-seccion-title" aria-label="Color de alto contraste">Accessibility</div>
+            <div class="contrast-center">
+                <button id="cuadro4" class="cuadroimg4" aria-label=" - Ocultar Imagenes - ">Hide Images
+                </button>
+                <button id="cuadro5" class="cuadroimg5"  aria-label=" - Cursor Grande - ">Large Cursor</button>
+                <button id="cuadro6" class="cuadroimg6" aria-label=" - Dislexia - " >Dyslexia</button>
+            </div>
+            <div class="contrast-center">
+                <button id="cuadro7" class="cuadroimg7" aria-label=" - Incremento de Texto - ">Increment Text
+                <div></div>
+            </button>
+                <button id="cuadro8" class="cuadroimg8" aria-label=" - Disminuir Texto - ">Decrease Text</button>
+                <button id="cuadro9" class="cuadroimg9" aria-label=" - Guia de lectura - ">Reading Guide</button>
+            </div>
+            <div class="contrast-center">
+                <button id="cuadro10" class="cuadroimg10" aria-label=" - Aumentar Espacio - ">Increase Space
+                <div></div>
+            </button>
+                <button id="cuadro11" class="cuadroimg11" aria-label=" - Disminuir Espacio - ">Decrease Space</button>
+                <button id="cuadro12" class="cuadroimg12" aria-label=" - Libro -">Reading Mode
+                <!-- <div></div> -->
+                </button>
+            </div>
+        </div>
+        <div id="constrast" class="square-seccion">
+            <div class="square-seccion-title" aria-label="Color de alto contraste">High Contrast Colour</div>
+            <div class="contrast-center">
+                <button id="cuadro13" class="cuadroimg13"  aria-label=" - Alto contraste - ">High Contrast
+                </button>
+                <button id="cuadro14" class="cuadroimg14"  aria-label=" - Alto contraste - ">High Contrast</button>
+                <button id="cuadro15" class="cuadroimg15" aria-label=" - Alto contraste - ">Gray Colour</button>
+                <button id="cuadro16" class="cuadroimg15" aria-label=" - Alto contraste - ">Normal</button>
+            </div>
+        </div>
+    </div>
+  
+   <!-- end sidebar  -->
+
+   <div  id="page">
+       <div class="container">
+           <!--MODO DISCAPACIDAD-->
+           <div class="discapacidad">
+               <div>
+                   <p class="discapacidad_idioma"><a href="../contabilidad.html">ES</a> | <a href="#"><b>EN</b></a></p>
+               </div>
+           </div>
+
+           <!--BANNER-->
+           <div class="banner">
+               <img src="../img/banner_contabilidad_ingles.png" alt="banner-uprit" id="logo">
+               <!-- <div class="banner_capa">
+                   <p class="titulo"><a>LICENCIADA POR SUNEDU</a></p>
+               </div> -->
+           </div>
+
+           <!--PRESENTACION-->
+           <div class="presentacion" data-aos="fade-up">
+               <div>
+                   <p class="titulo">Presentation</p>
+                   <p class="parrafo">Accounting and Finance careers play a very important role in the economy, not only for governments, but also for businesses, households, national and international companies, among others.</p>
+                   <p class="parrafo">It is necessary to use financial and accounting data to make business decisions. This situation indicates that company managers or those in charge of the administrative and financial department have received rigorous training in the field of accounting and finance.</p>
+                   <p class="parrafo">This career is very important because it manages the financial and economic activities of a company to make the most appropriate decisions.</p>
+               </div>
+               <div class="presentacion_encima">
+                   <div class="presentacion_bloque2">
+                       <p class="parrafo negrita">Information</p>
+                       <hr>
+                       <div class="presentacion_detalle">
+                           <p class="parrafo">Credits</p>
+                           <p class="parrafo">200</p>
+                           <p class="parrafo">Duration </p>
+                           <p class="parrafo">10 semesters</p>
+                           <p class="parrafo">Schedule </p>
+                           <p class="parrafo">Monday - Saturday </p>
+                           <p class="parrafo">Location  </p>
+                           <p class="parrafo">Trujillo </p>
+                           <p class="parrafo">Modality  </p>
+                           <p class="parrafo">Presential </p>
+                       </div>
+                       <p class="parrafo negrita">Belongs to </p>
+                       <hr>
+                       <p class="parrafo">Faculty of Business Sciences</p>
+                       <p class="parrafo negrita">Study Plan</p>
+                       <hr>
+                       <p class="parrafo"><i class="fa-solid fa-download"></i> <a href="../documentos/planesestudio/Plan Estudios Contabilidad.pdf" target="_blank">Download</a></p>
+                   </div>
+               </div>
+           </div>
+
+           <!--DIRECTOR DE CARRERA-->
+           <div>
+               <div class="director" data-aos="fade-up">
+                   <div>
+                       <p class="titulo">Career Coordinator</p>
+                       <div class="director_separacion">
+                           <div class="director_bloques">
+                               <div>
+                                   <p class="carreras_linea"></p>
+                               </div>
+                               <div>
+                                   <p class="parrafo"><b>Pedro Aponte Méndez</b> <br>Certified Public Accountant and doctor in Accounting and Finance. Head of the EsSalud Finance office, head of the logistics unit of the Víctor Lazarte Echegaray hospital. President of extrajudicial processes. Head of the Finance Office of the Víctor Lazarte Echegaray Hospital.</p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="director_foto">
+                       <!--<img src="../img/director_administracion_uprit.jpg" alt="director_administracion_uprit">-->
+                   </div>
+               </div>
+           </div>
+
+           <!-----------CONTACTO DE LA CARRERA--------------->
+           <!-- <div  class="oficina" data-aos="fade-up">
+               <div>
+                   <p class="parrafo title"><b>MAS INFORMACIÓN</b></p>
+               </div>
+               <div>
+                   <p class="parrafo subtitle">
+                       Asistente: Lic. Anaís Málaga Robles<br>
+                       Correo: administracion@uprit.edu.pe<br>
+                       Teléfono: (+51) 044-556012 - Anexo 115<br>
+                       N° Celular: 982781009<br>
+                   </p>
+               </div>
+           </div> -->
+           <div class="oficina" data-aos="fade-up">
+               <div class="oficina_bloque">                    
+                   <div class="title">
+                       <p class="parrafo"><b>Contact</b></p>
+                   </div>
+                   <div>
+                       <p class="parrafo subtitle">
+                           Assistant: Lic. Augusto Cabrera<br>
+                           E-mail: augusto.cabrera@uprit.edu.pe<br>
+                           Teléfono: (+51) ---<br>
+                           N° Celular: ---<br>
+                       </p>
+                   </div>
+               </div>
+               <div class="oficina_bloque">
+                <div class="title">
+                    <p class="parrafo"><b>Schedules</b></p>
+                </div>
+                <p class="parrafo subtitle">
+                    <!-- <i class="fa-solid fa-download"></i> Descargar horarios semestre académico 2023 - I<br>
+                    <i class="fa-solid fa-download"></i> Descargar relación de expedientes aprobados para ceremonia de colación<br>
+                    <i class="fa-solid fa-download"></i> Descargar lista de sustentaciones programadas<br> -->
+                    <a href="../docs/horarios.pdf" target="_blank"><img src="../img/horarios.png" alt="horarios uprit"></a>
+                </p>
+            </div>
+           </div>
+
+           <!-----------PERFIL PROFESIONAL--------------->
+           <div class="perfil" data-aos="fade-up">
+               <div>
+                   <p class="titulo">Professional Performance</p>
+                   <!-- <ul>
+                       <li class="parrafo">Ordenación y dirección de la ejecución de obras de edificación, de rehabilitación y de restauración.</li>
+                       <li class="parrafo">Control de la calidad de los materiales de las obras y de la aplicación de la normativa técnica de la edificación.</li>
+                       <li class="parrafo">Estudios de sostenibilidad en los edificios y gestión del uso, la conservación y el mantenimiento de los edificios.</li>
+                       <li class="parrafo">Dirección de empresas constructoras e inmobiliarias.</li>
+                       <li class="parrafo">Dirección de la producción en empresas de productos e innovaciones tecnológicas de la edificación.</li>
+                       <li class="parrafo">Organización y gestión de la economía, con la realización de valoraciones, tasaciones y estudios de viabilidad económica.</li>
+                   </ul> -->
+                   <div class="perfil_bloques">
+                       <div>
+                           <p class="parrafo"><b>Occupational fields</b></p>
+                           <ul>
+                               <li class="parrafo">Public entities such as ministries, regional governments, others</li>
+                               <li class="parrafo">Regulatory and control agencies</li>
+                               <li class="parrafo">Auditing associations or companies</li>
+                               <li class="parrafo">Non-governmental organizations</li>
+                               <li class="parrafo">Public and private companies in general</li>
+                           </ul>
+                       </div>
+                       <div>
+                           <p class="parrafo"><b>Job positions:</b></p>
+                           <ul>
+                               <li class="parrafo">Management auditor</li>
+                               <li class="parrafo">Financial Director/Auditor</li>
+                               <li class="parrafo">Accountant specializing in corporate auditing</li>
+                               <li class="parrafo">Internal and/or External Auditor of Accounting and Tax Policies and Procedures</li>
+                               <li class="parrafo">Chartered Accountant</li>
+                               <li class="parrafo">Accounting Advisor</li>
+                               <li class="parrafo">Accountant specializing in corporate auditing</li>
+                               <li class="parrafo">Accountant specializing in municipal accounting</li>
+                           </ul>
+                       </div>
+                       <div>
+                           <p class="parrafo"><b>Job performance domains</b></p>
+                           <ul>
+                               <li class="parrafo">Tax Audit</li>
+                               <li class="parrafo">Financial Audit</li>
+                               <li class="parrafo">Management Audit</li>
+                               <li class="parrafo">Accounting Expertise</li>
+                               <li class="parrafo">Municipal Accounting</li>
+                               <li class="parrafo">State Financial Information System</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <!-----------DOCENTES DE LA CARRERA----------->
+           <!-- <div data-aos="fade-up">
+               <p class="titulo">Teachers of the career</p>
+               <div class="servicios">
+                   <div class="owl-carousel owl-theme">
+                       <div class="item">
+                           <div class="item_img">
+                               <img src="../img/alberto_oikawa_uprit.jpg" class="foto_docente">
+                           </div>
+                           <p class="noticias__fecha parrafo">Miguel Benites Murga</p>
+                           <p class="parrafo">Magister en Administración de Negocios</p>
+                           <p class="parrafo"><a href="" class="linkedin">Ir a Linkedin</a></p>
+                       </div>
+                       <div class="item">
+                           <div class="item_img">
+                               <img src="../img/silvia_ferreira_uprit.jpg" class="foto_docente">
+                           </div>
+                           <p class="noticias__fecha parrafo">Sara Gordillo Culquitante</p>
+                           <p class="parrafo">Magister en Gestión Minera y Ambiental</p>
+                           <p class="parrafo"><a href="" class="linkedin">Ir a Linkedin</a></p>
+                       </div>
+                       <div class="item">
+                           <div class="item_img">
+                               <img src="../img/manuel_lucania_uprit.jpg" class="foto_docente">
+                           </div>
+                           <p class="noticias__fecha parrafo">Eduarda Salvatierra Santos</p>
+                           <p class="parrafo">Magister en Gestión Tributaria</p>
+                           <p class="parrafo"><a href="" class="linkedin">Ir a Linkedin</a></p>
+                       </div>
+                       <div class="item">
+                           <div class="item_img">
+                               <img src="../img/antonio_alcocer_uprit.jpg" class="foto_docente">
+                           </div>
+                           <p class="noticias__fecha parrafo">Inés Deza Malpartida</p>
+                           <p class="parrafo">Magister en Dirección de Personas</p>
+                           <p class="parrafo"><a href="" class="linkedin">Ir a Linkedin</a></p>
+                       </div>
+                       <div class="item">
+                           <div class="item_img">
+                               <img src="../img/manuel_lucania_uprit.jpg" class="foto_docente">
+                           </div>
+                           <p class="noticias__fecha parrafo">Alberto Portillo Fernández</p>
+                           <p class="parrafo">Doctor en Dirección Pública</p>
+                           <p class="parrafo"><a href="" class="linkedin">Ir a Linkedin</a></p>
+                       </div>
+                       <div class="item">
+                           <div class="item_img">
+                               <img src="../img/javier_pastor_uprit.jpg" class="foto_docente">
+                           </div>
+                           <p class="noticias__fecha parrafo">Susana Mendieta Gálvez</p>
+                           <p class="parrafo">Magister en Derecho de Empresa</p>
+                           <p class="parrafo"><a href="" class="linkedin">Ir a Linkedin</a></p>
+                       </div>
+                   </div>
+               </div>
+           </div> -->
+
+           <div class="profesores" data-aos="fade-up">
+            <div class="profesores_carrera">
+                TEACHERS OF THE ACCOUNTING AND FINANCE CAREER
+            </div>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                    <div class="swiper-slide">
+                            <div class="sara">
+                                <p class="parrafo"><br>Santos Pedro Aponte Méndez <br> Doctor in Accounting and Finance</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sara">
+                                <p class="parrafo"><br>Jorge Alejandro Dionicio Zavaleta <br> Master's Degree in Economics with a major in Taxation</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sara">
+                                <p class="parrafo"><br>Javier Estuardo Navarro Santander <br> Master's Degree in University Teaching</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sara">
+                                <p class="parrafo"><br>Milagros Isabel Rivas Mendoza <br> Master's Degree in Educational Sciences with a major in Teaching and Research</p>
+                            </div>
+                        </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+                
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+
+           <!-------------------FOOTER----------------->
+           <div data-aos="fade-up">
+                <p class="linea"></p>
+                <div>
+                    <p class="upt">UNIVERSIDAD PRIVADA DE TRUJILLO</p>
+                </div>
+                <div class="informes">
+                    <div><i class="fa-solid fa-phone"></i> 044-2356XX</div>
+                    <div><i class="fa-solid fa-location-dot"></i> Av. Industrial km. 4 - Semirústica El Bosque</div>
+                    <div><i class="fa-solid fa-at"></i> informes@uprit.edu.pe</div>
+                </div><br>
+                <div class="redes">
+                    <a href="https://www.facebook.com/uptrujillo" target="_blank"><i class="fa-brands fa-facebook-f sociales"></i></a>
+                    <a href="https://x.com/UpritTrujillo" target="_blank"><i class="fa-brands fa-twitter sociales"></i></a>
+                    <a href="https://www.youtube.com/@uprit2166" target="_blank"><i class="fa-brands fa-youtube sociales"></i></a>
+                    <a href="https://www.instagram.com/upritrujillo/" target="_blank"><i class="fa-brands fa-instagram sociales"></i></a>
+                    <a href="https://www.linkedin.com/school/universidad-privada-de-trujillo" target="_blank"><i class="fa-brands fa-linkedin-in sociales"></i></a>
+                    <a href="https://pin.it/3zQPcsp4X" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+                <div class="redes">
+                    <p style="text-align: center;">UPRIT © 2022 - All rights reserved. <br>
+                        Area of Information Technologies - UPRIT</p>
+                </div>
+            </div>    
+       </div>
+       <!-- lectura -->
+       <div id="read_guide"></div>
+   </div>
+
+   <script>
+       $(document).ready(function() {
+           var owl = $('.owl-carousel');
+           owl.owlCarousel({
+               margin: 10,
+               nav: true,
+               loop: true,
+               autoplay:true,
+               autoplayTimeout:5000,
+               responsive: {
+                   0: {
+                       items: 1
+                   },
+                   300: {
+                       items: 2
+                       },
+                   600: {
+                       items: 3
+                   },
+                   1000: {
+                       items: 4
+                   }
+               }
+           })
+       })
+   </script>
+
+   <script>
+       function modoclaro(){
+           document.getElementById('page').classList.remove('dark-mode')
+           document.getElementById('id-moon').classList.remove('activer')
+           document.getElementById('logo').src = 'img/banner_administracion.png'
+           this.classList.add('activer')
+       }
+       function modooscuro(){
+           document.getElementById('page').classList.add('dark-mode')
+           document.getElementById('id-sun').classList.remove('activer')
+           document.getElementById('logo').src = 'img/administracion_dark.png'
+           this.classList.add('activer')
+       }
+       
+       document.addEventListener('click', (e) => {
+           if(e.target.matches('#id-sun'))
+               modoclaro();
+           if(e.target.matches('#id-moon'))
+               modooscuro();
+       })
+
+       /*document.getElementById('id-sun').onclick = function(){
+           document.getElementById('page').classList.remove('dark-mode')
+           document.getElementById('id-moon').classList.remove('activer')
+           document.getElementById('logo').src = 'img/banner_administracion.png';
+           this.classList.add('activer')
+       }
+
+       document.getElementById('id-moon').onclick = function(){
+           document.getElementById('page').classList.add('dark-mode')
+           document.getElementById('id-sun').classList.remove('activer')
+           document.getElementById('logo').src = 'img/administracion_dark.png';
+           this.classList.add('activer')
+       }*/
+   </script>
+
+   <script src="../js/aos.js"></script>
+   <!-- <script src="js/modoscuro.js"></script> -->
+   <script>
+       AOS.init({
+           duration: 2000,
+       });
+   </script>  
+
+   <!--------------------------------------------JS SWIPER ------------------------------------------->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>    
+
+   <script>
+       const swiper = new Swiper('.swiper', {
+           // Optional parameters
+           autoplay: {
+               delay: 3000,
+           },
+           direction: 'vertical',
+           loop: true,
+           
+           // If we need pagination
+           pagination: {
+               el: '.swiper-pagination',
+           },
+
+           // And if we need scrollbar
+           scrollbar: {
+               el: '.swiper-scrollbar',
+           },
+       });
+   </script>
+
+   <script src="../js/menu.js"></script>
+   <script src="../js/acceso.js"></script>
+   <script src="../js/buscar.js"></script>
+</body>
+</html>

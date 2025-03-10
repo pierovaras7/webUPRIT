@@ -1,0 +1,68 @@
+.banner_defensoria{
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.banner_defensoria img{
+    width: 100%;
+    height: 100%;
+}
+
+.presentacion{
+    width: 80%;
+    margin: auto;
+}
+
+.presentacion_bloque{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
+
+.defima{
+    border-radius: 50%;
+    
+}
+
+.descripcion_imagen{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.net{
+    background: rgba(177, 165, 165, 0.75);
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.net:hover{
+    transition: all ease 1s;
+    cursor: pointer;
+    background: rgba(177, 165, 165, 1);
+    color: white;
+}
+
+.linea_defensora{
+    width: 100%;
+}
+
+.fa-download:hover{
+    cursor: pointer;
+}
+
+.dark-mode{
+    color: white;
+}
+
+/******************************RESPONSIVE*************************************************/
+@media (max-width: 768px) {
+    .presentacion_bloque{
+        display: flex;
+        flex-direction: column;
+    }
+}

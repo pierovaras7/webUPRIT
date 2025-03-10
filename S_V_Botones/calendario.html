@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPRIT - Calendario</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="primeraVista.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!---------------------------------------------FUENTES GOOGLE------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="navbar">
+                <!--<div class="logo"><a href="/principal/index.html">UPRIT+info</a></div>-->
+                <img src="../img/uprit_logo1.png">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="ruta-section">
+            <h1>Calendario 2025</h1>
+            <ul class="ruta-list">
+                <li><a href="">1. Descubre tus credenciales</a></li>
+                <li><a href="">2. Cambia tu contraseña</a></li>
+                <li><a href="">3. Prepárate para el inicio de clases</a></li>
+                <li><a href="">4. Conoce tus horarios</a></li>
+                <li><a href="">5. Descubre la plataforma UTP+ Class</a></li>
+                <li><a href="">6. Descubre la plataforma UTP+ Portal</a></li>
+                <li><a href="">7. Descubre UPRI+ App</a></li>
+                <li><a href="">8. Descubre la plataforma Zoom</a></li>
+                <li><a href="">9. Soporte para nuevos estudiantes</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Chatbot -->
+    <div class="chatbot-button">
+        <i class="fas fa-comments"></i>
+        <span>¿Necesitas ayuda?</span>
+    </div>
+    
+    <div class="chatbot-container" style="display: none;">
+        <div class="chatbot-header">
+            <h3>Asistente Virtual UPRIT</h3>
+            <button class="close-chat"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chatbot-messages"></div>
+        <div class="chatbot-input">
+            <input type="text" placeholder="Escribe tu mensaje...">
+            <button class="send-message"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="../js/scriptPortal.js"></script>
+</body>
+</html>

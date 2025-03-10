@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPRIT - INGENIERÍA CIVIL</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!---------------------------------------CSS PROPIOS------------------------------------------->
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/uprit.css">
+    <link rel="stylesheet" href="css/carreras.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!---------------------------------------------FUENTES GOOGLE------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+
+    <!---------------------------------------------FONTAWESOME------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-------------------------------------------- CDN BOOTSTRAP 5 ------------------------------------------->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!---------------------------------------------LIBRERIA AOS (EFECTO) Y OWS (CARRUSEL)------------------------------------->
+    <link rel="stylesheet" href="css/aos.css">
+    <!-- <link rel="stylesheet" href="css/owl.carousel.min.css"> -->
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/accesible/styles.css">
+
+    <!---------------------------------------------CSS SWIPER------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <!-------------------------------------------- SCRIPT JQUERY Y CARRUSEL ------------------------------------------->
+    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/owl.carousel.min.js"></script> -->
+</head>
+<body>
+    <!----------MENÚ----------->
+    <nav class="main-nav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-5 fw-bolder fs-3" href="#">UPRIT</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="autoridades.html">Autoridades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="transparencia.html">Transparencia</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Carreras</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="administracion.html"><i class="fa-solid fa-user-tie"></i> Administracion de Empresas</a></li>
+                                <li><a class="dropdown-item" href="contabilidad.html"><i class="fa-solid fa-coins"></i> Contabilidad y Finanzas</a></li>
+                                <li><a class="dropdown-item" href="derecho.html"><i class="fa-solid fa-scale-balanced"></i> Derecho</a></li>
+                                <li><a class="dropdown-item" href=""><i class="fa-solid fa-helmet-safety"></i> Ingeniería Civil</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="informacion.html"><i class="fa-sharp fa-solid fa-universal-access"></i> Acceso a la información pública</a></li>
+                                <li><a class="dropdown-item" href="admision.html"><i class="fa-solid fa-pen-to-square"></i> Admisión</a></li>
+                                <li><a class="dropdown-item" href="atencion.html"><i class="fa-solid fa-headset"></i> Atención</a></li>
+                                <li><a class="dropdown-item" href="idiomas.html"><i class="fa-solid fa-globe"></i> Centro de Idiomas</a></li>
+                                <li><a class="dropdown-item" href="defensoria.html"><i class="fa-solid fa-shield-halved"></i> Defensoría Universitaria</a></li>
+                                <li><a class="dropdown-item" href="fondoeditorial.html"><i class="fa-sharp fa-solid fa-book"></i> Fondo Editorial</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <input type="text" placeholder="Buscar.." class="text_input" id="Buscartexto">
+                    <button class="btn-drop-text" id="droptext" aria-label="Borrar" style="font-weight: 800;margin-left: 0;"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+        </nav>
+        <!-- abrir sidbar -->
+        <div class="leftbutton image-acces"></div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <audio controls style="display: none;">
+            <source src="audio/civil.mp3" type="audio/mpeg">
+        </audio>
+        <div id="textos-sizes" class="square-seccion" style="margin-top: 35px;">
+            <div class="square-seccion-title" aria-label="Color de alto contraste">Lector de Texto</div>
+            <div class="contrast-center">
+                <button id="cuadro1"  class="cuadroimg1" aria-label="Reproducir">Reproducir</button>
+                <button id="cuadro2"  class="cuadroimg2" aria-label="Pausar">Pausar</button>
+                <button id="cuadro3"  class="cuadroimg3" aria-label="Volver ">Reiniciar</button>
+            </div>
+        </div>
+        <div id="mulit-accesibilidad" class="square-seccion">
+            <div class="square-seccion-title" aria-label="Color de alto contraste">Accesibilidad</div>
+            <div class="contrast-center">
+                <button id="cuadro4" class="cuadroimg4" aria-label=" - Ocultar Imagenes - ">Ocultar Imagenes
+                </button>
+                <button id="cuadro5" class="cuadroimg5"  aria-label=" - Cursor Grande - ">Cursor Grande</button>
+                <button id="cuadro6" class="cuadroimg6" aria-label=" - Dislexia - " >Dislexia</button>
+            </div>
+            <div class="contrast-center">
+                <button id="cuadro7" class="cuadroimg7" aria-label=" - Incremento de Texto - ">Incrementar Texto
+                   <div></div>
+               </button>
+                <button id="cuadro8" class="cuadroimg8" aria-label=" - Disminuir Texto - ">Disminuir Texto</button>
+                <button id="cuadro9" class="cuadroimg9" aria-label=" - Guia de lectura - ">Guia de lectura</button>
+            </div>
+            <div class="contrast-center">
+                <button id="cuadro10" class="cuadroimg10" aria-label=" - Aumentar Espacio - ">Aumentar Espacio
+                   <div></div>
+               </button>
+                <button id="cuadro11" class="cuadroimg11" aria-label=" - Disminuir Espacio - ">Disminuir Espacio</button>
+                <button id="cuadro12" class="cuadroimg12" aria-label=" - Libro -">Modo Lectura
+                   <!-- <div></div> -->
+                </button>
+            </div>
+        </div>
+        <div id="constrast" class="square-seccion">
+            <div class="square-seccion-title" aria-label="Color de alto contraste">Color de alto contraste</div>
+            <div class="contrast-center">
+                <button id="cuadro13" class="cuadroimg13"  aria-label=" - Alto contraste - ">Contraste 1
+                </button>
+                <button id="cuadro14" class="cuadroimg14"  aria-label=" - Alto contraste - ">Contraste 2</button>
+                <button id="cuadro15" class="cuadroimg15" aria-label=" - Alto contraste - ">Gris</button>
+                <button id="cuadro16" class="cuadroimg15" aria-label=" - Alto contraste - ">Normal</button>
+            </div>
+        </div>
+    </div>
+   
+    <!-- end sidebar  -->
+
+    <div  id="page">
+        <div class="container">
+            <!--MODO DISCAPACIDAD-->
+            <div class="discapacidad">
+                <!-- <div class="container-btn-mode">
+                    <div id="id-sun" class="btn-mode sun activer">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div id="id-moon" class="btn-mode moon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                </div> -->
+                <div>
+                    <p class="discapacidad_idioma"><a href=""><b>ES</b></a> | <a href="en/civil.html">EN</a></p>
+                </div>
+            </div>
+
+            <!--BANNER-->
+            <div class="banner">
+                <img src="img/banner_civil.png" alt="banner-uprit" id="logo">
+            </div>
+
+            <!--PRESENTACION-->
+            <div class="presentacion" data-aos="fade-up">
+                <div>
+                    <p class="titulo">Presentación</p>
+                    <p class="parrafo">La ingeniería civil es la disciplina encargada de llevar a cabo toda clase de infraestructuras que la sociedad necesita para su desarrollo, para ello debe ser capaz de comprender multitud de factores que afectan de un modo u otro a las infraestructuras y actuar en consecuencia.</p>
+                    <p class="parrafo">El Ingeniero Civil cuenta con una sólida competencia técnica que le permite realizar la evaluación, planeamiento, diseño, construcción, operación y mantenimiento de obras y sistemas de infraestructura civil; posee adaptabilidad y versatilidad que le permite trabajar e interactuar en todo nivel y tipo de proyectos de ingeniería; se comunica efectivamente con todos los stakeholders de un proyecto; actúa en todo momento con responsabilidad ética y profesional; y se actualiza constantemente en los cambios y avances de la profesión con el fin de procurar la innovación y los avances tecnológicos en la profesión.</p>
+                </div>
+                <div class="presentacion_encima">
+                    <div class="presentacion_bloque2">
+                        <p class="parrafo negrita">Información</p>
+                        <hr>
+                        <div class="presentacion_detalle">
+                            <p class="parrafo">Créditos </p>
+                            <p class="parrafo">200</p>
+                            <p class="parrafo">Duración </p>
+                            <p class="parrafo">10 semestres</p>
+                            <p class="parrafo">Horario </p>
+                            <p class="parrafo">Lunes - Sábado </p>
+                            <p class="parrafo">Lugar  </p>
+                            <p class="parrafo">Trujillo </p>
+                            <p class="parrafo">Modalidad  </p>
+                            <p class="parrafo">Presencial </p>
+                        </div>
+                        <p class="parrafo negrita">Pertenece a</p>
+                        <hr>
+                        <p class="parrafo">Facultad de Ingeniería</p>
+                        <p class="parrafo negrita">Plan de Estudios</p>
+                        <hr>
+                        <p class="parrafo"><i class="fa-solid fa-download"></i> <a href="documentos/planesestudio/Plan Estudios Civil.pdf" target="_blank">Descargar</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!--DIRECTOR DE CARRERA-->
+            <div>
+                <div class="director" data-aos="fade-up">
+                    <div>
+                        <p class="titulo">Coordinador de la carrera</p>
+                        <div class="director_separacion">
+                            <div class="director_bloques">
+                                <div>
+                                    <p class="carreras_linea"></p>
+                                </div>
+                                <div>
+                                    <p class="parrafo"><b>Rolando Fuentes Llave</b> <br>Ingeniero Civil y doctorado en Gestión Pública y Gobernalidad con vasta experiencia en gestión de proyectos, manejo de obras e índices de gestión de proyectos, supervisión de procesos constructivos, control de calidad de obras de concreto, proyectos BIM, metodología LEAN.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="director_foto">
+                        <!--<img src="img/director_administracion_uprit.jpg" alt="director_administracion_uprit">-->
+                    </div>
+                </div>
+            </div>
+
+            <!-----------CONTACTO DE LA CARRERA--------------->
+            <div class="oficina" data-aos="fade-up">
+                <div class="oficina_bloque">                    
+                    <div class="title">
+                        <p class="parrafo"><b>Contacto</b></p>
+                    </div>
+                    <div>
+                        <p class="parrafo subtitle">
+                            Asistente: Lic. Augusto Cabrera<br>
+                            Correo: augusto.cabrera@uprit.edu.pe<br>
+                            Teléfono: (+51) ---<br>
+                            N° Celular: ---<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="oficina_bloque">
+                    <div class="title">
+                        <p class="parrafo"><b>Horarios</b></p>
+                    </div>
+                    <p class="parrafo subtitle">
+                        <!-- <i class="fa-solid fa-download"></i> Descargar horarios semestre académico 2023 - I<br>
+                        <i class="fa-solid fa-download"></i> Descargar relación de expedientes aprobados para ceremonia de colación<br>
+                        <i class="fa-solid fa-download"></i> Descargar lista de sustentaciones programadas<br> -->
+                        <a href="docs/horarios.pdf" target="_blank"><img src="img/horarios.png" alt="horarios uprit"></a>
+                    </p>
+                </div>
+            </div>
+
+            <!-----------PERFIL PROFESIONAL--------------->
+            <div class="perfil" data-aos="fade-up">
+                <div>
+                    <p class="titulo">Desempeño profesional</p>
+                    <!-- <div class="perfil_bloques">
+                        <div>
+                            <p class="parrafo"><b>Como Consultor de proyectos:</b></p>
+                            <ul>
+                                <li class="parrafo">Estructuras resistentes, obras civiles y de arte de todo tipo.</li>
+                                <li class="parrafo">Riesgo sísmico en construcciones.</li>
+                                <li class="parrafo">Trabajos topográficos, cartográficos, geodésicos y catastro.</li>
+                                <li class="parrafo">Estudios de mecánica de suelos y mecánica de rocas.</li>
+                                <li class="parrafo">Planeamiento urbano, rural y de sistemas de transporte en general.</li>
+                                <li class="parrafo">Estudio de tránsito en áreas urbanas y rurales.</li>
+                                <li class="parrafo">Diseño y mantenimiento de infraestructura vial y pavimentos.</li>
+                                <li class="parrafo">Obras de saneamiento urbano, rural y regional; obras de control de erosión.</li>
+                                <li class="parrafo">Obras de riego y sus correspondientes obras de desagüe y drenaje.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="parrafo"><b>Como Ingeniero de Obras / Gerente de proyectos en construcción</b></p>
+                            <p class="parrafo">Planificar, ejecutar, controlar y monitorear proyectos de edificación o infraestructura en forma eficiente.</p>
+
+                            <p class="parrafo"><b>Como Supervisor</b></p>
+                            <p class="parrafo">Revisar y verificar el cumplimiento de las especificaciones técnicas del diseño, en representación de los propietarios de las obras.</p>
+
+                            <p class="parrafo"><b>Como Perito</b></p>
+                            <p class="parrafo">Expresar opinión profesional sobre problemas que competen a la ingeniería civil en litigios legales o en arbitrajes.</p>
+                        </div>
+                        
+                    </div> -->
+                    <div class="perfil_bloques">
+                        <div>
+                            <p class="parrafo"><b>Campos ocupacionales</b></p>
+                            <ul>
+                                <li class="parrafo">Empresas privadas de inversión en infraestructuras</li>
+                                <li class="parrafo">Empresas públicas</li>
+                                <li class="parrafo">Gobiernos Regionales y Municipales</li>
+                                <li class="parrafo">Ministerios y otras Entidades públicas</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="parrafo"><b>Puestos de trabajo:</b></p>
+                            <ul>
+                                <li class="parrafo">Funcionario público o de institución especializada</li>
+                                <li class="parrafo">Formulador de proyectos de infraestructura</li>
+                                <li class="parrafo">Gerente de infraestructura/ Proyectos</li>
+                                <li class="parrafo">Gerente/Jefe de Planeamiento</li>
+                                <li class="parrafo">Gerente/Jefe/Analista de Inversión Pública</li>
+                                <li class="parrafo">Ingeniero de costos / presupuestos</li>
+                                <li class="parrafo">Otros puestos similares formulación y evaluación de proyectos</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="parrafo"><b>Dominios de desempeño laboral</b></p>
+                            <ul>
+                                <li class="parrafo">Evaluación de Proyectos de Inversión</li>
+                                <li class="parrafo">Inversión Pública</li>
+                                <li class="parrafo">Economía</li>
+                                <li class="parrafo">Costos y presupuestos</li>
+                                <li class="parrafo">Gestión de Proyectos</li>
+                                <li class="parrafo">Administración</li>
+                                <li class="parrafo">Planificación</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-----------DOCENTES DE LA CARRERA----------->
+            <!-- <div data-aos="fade-up">
+                <p class="titulo">Docentes de la carrera</p>
+                <div class="servicios">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="item_img">
+                                <img src="img/alberto_oikawa_uprit.jpg" class="foto_docente">
+                            </div>
+                            <p class="noticias__fecha parrafo">Miguel Benites Murga</p>
+                            <p class="parrafo">Magister en Administración de Negocios</p>
+                            <p class="parrafo"><a href="" class="linkedin">Ir a Linkedin</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="profesores" data-aos="fade-up">
+                <div class="profesores_carrera">
+                    DOCENTES DE LA CARRERA DE INGENIERÍA CIVIL
+                </div>
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="sara">
+                                <p class="parrafo"><br>Lenin Miguel Bendezú Romero <br> Doctor en Ingeniería Civil</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sara">
+                                <p class="parrafo"><br>Enrique Manuel Durand Bazán <br> Doctor en Ciencias de la Educación</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sara">
+                                <p class="parrafo"><br>Hugo Dante Montoro Cáceres <br> Magister en Ciencias de la Tierra</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sara">
+                                <p class="parrafo"><br>Giuseppe Renat Negrini Mávila <br> Magister en Ciencias de la Construcción</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    
+                    <!-- If we need navigation buttons -->
+                    <!-- <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div> -->
+                    
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+
+
+            <!-------------------FOOTER----------------->
+            <div data-aos="fade-up">
+                <p class="linea"></p>
+                <div>
+                    <p class="upt">UNIVERSIDAD PRIVADA DE TRUJILLO</p>
+                </div>
+                <div class="informes">
+                    <div><i class="fa-solid fa-phone"></i> 970597183</div>
+                    <div><i class="fa-solid fa-location-dot"></i> Av. Industrial km. 4 - Semirústica El Bosque</div>
+                    <div><i class="fa-solid fa-at"></i> informes@uprit.edu.pe</div>
+                </div><br>
+                <div class="redes">
+                    <a href="https://www.facebook.com/uptrujillo" target="_blank"><i class="fa-brands fa-facebook-f sociales"></i></a>
+                    <a href="https://x.com/UpritTrujillo" target="_blank"><i class="fa-brands fa-twitter sociales"></i></a>
+                    <a href="https://www.youtube.com/@uprit2166" target="_blank"><i class="fa-brands fa-youtube sociales"></i></a>
+                    <a href="https://www.instagram.com/upritrujillo/" target="_blank"><i class="fa-brands fa-instagram sociales"></i></a>
+                    <a href="https://www.linkedin.com/school/universidad-privada-de-trujillo" target="_blank"><i class="fa-brands fa-linkedin-in sociales"></i></a>
+                    <a href="https://pin.it/3zQPcsp4X" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+                <div class="redes">
+                    <p style="text-align: center;">UPRIT © 2024 - Todos los derechos reservados. <br>
+                        Dpto Tecnologías de Información - UPRIT</p>
+                </div>
+            </div>
+        </div>
+        <!-- lectura -->
+        <div id="read_guide"></div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                margin: 10,
+                nav: true,
+                loop: true,
+                autoplay:true,
+                autoplayTimeout:5000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    300: {
+                        items: 2
+                        },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            })
+        })
+    </script>
+
+    <script>
+        function modoclaro(){
+            document.getElementById('page').classList.remove('dark-mode')
+            document.getElementById('id-moon').classList.remove('activer')
+            document.getElementById('logo').src = 'img/banner_civil.png'
+            this.classList.add('activer')
+        }
+        function modooscuro(){
+            document.getElementById('page').classList.add('dark-mode')
+            document.getElementById('id-sun').classList.remove('activer')
+            document.getElementById('logo').src = 'img/banner_civil_dark.png'
+            this.classList.add('activer')
+        }
+        
+        document.addEventListener('click', (e) => {
+            if(e.target.matches('#id-sun'))
+                modoclaro();
+            if(e.target.matches('#id-moon'))
+                modooscuro();
+        })
+    </script>
+
+    <script src="js/aos.js"></script>
+    <!-- <script src="js/modoscuro.js"></script> -->
+    <script>
+        AOS.init({
+            duration: 2000,
+        });
+    </script>
+
+    <!--------------------------------------------JS SWIPER ------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>    
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            autoplay: {
+                delay: 3000,
+            },
+            direction: 'vertical',
+            loop: true,
+            
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+
+    <script src="js/menu.js"></script>
+    <script src="js/acceso.js"></script>
+    <script src="js/buscar.js"></script>
+</body>
+</html>

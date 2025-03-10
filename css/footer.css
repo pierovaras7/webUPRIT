@@ -1,0 +1,44 @@
+.upt{
+    font-size: 20px;
+    text-align: center;
+    color: #550018;
+}
+
+.informes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30%;
+    margin: auto;
+}
+
+.redes i:hover{
+    cursor: pointer;
+    color: black;
+    transform: scale(1.5);
+    transition: all ease 2s;
+}
+
+.linea{
+    border: 1px solid #550018;
+}
+
+@media (max-width: 640px) {
+    .informes{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .redes{
+        width: 80%;
+    }
+}

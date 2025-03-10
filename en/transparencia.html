@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPRIT - TRANSPARENCY PORTAL</title>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+    <!---------------------------------------------CSS PROPIO------------------------------------->
+    <link rel="stylesheet" href="../css/menu_transparencia.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    
+    <!---------------------------------------------FUENTES GOOGLE------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+
+    <!---------------------------------------------FONTAWESOME------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!---------------------------------------------BOOSTRAP------------------------------------->
+    <link rel="stylesheet" href="../css/bootstrapmModal.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="../css/accesible/styles.css">
+
+    <!-- Acceso  -->
+    <script src="../js/jquery.min.js"></script>
+</head>
+<body>
+    <!----------MENÚ----------->
+    <nav class="main-nav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-5 fw-bolder fs-3" href="index.html">UPRIT</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="autoridades.html">Autorities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="">Transparency</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Careers</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="administracion.html"><i class="fa-solid fa-user-tie"></i> Business Administration</a></li>
+                                <li><a class="dropdown-item" href="contabilidad.html"><i class="fa-solid fa-coins"></i> Accounting and Finance</a></li>
+                                <li><a class="dropdown-item" href="derecho.html"><i class="fa-solid fa-scale-balanced"></i> Law</a></li>
+                                <li><a class="dropdown-item" href="civil.html"><i class="fa-solid fa-helmet-safety"></i> Civil Engineering</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="informacion.html"><i class="fa-sharp fa-solid fa-universal-access"></i> Access to public information</a></li>
+                                <li><a class="dropdown-item" href="admision.html"><i class="fa-solid fa-pen-to-square"></i> Admission</a></li>
+                                <li><a class="dropdown-item" href="atencion.html"><i class="fa-solid fa-headset"></i> Attention</a></li>
+                                <li><a class="dropdown-item" href="idiomas.html"><i class="fa-solid fa-globe"></i> Language Center</a></li>
+                                <li><a class="dropdown-item" href="defensoria.html"><i class="fa-solid fa-shield-halved"></i> University Advocacy</a></li>
+                                <li><a class="dropdown-item" href="fondoeditorial.html"><i class="fa-sharp fa-solid fa-book"></i> Editorial background</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <input type="text" placeholder="Search.." class="text_input" id="Buscartexto">
+                    <button class="btn-drop-text" id="droptext" aria-label="Borrar" style="font-weight: 800;margin-left: 0;"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+        </nav>
+         <!-- abrir sidbar -->
+         <div class="leftbutton image-acces"></div>
+    </nav>
+      
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <audio controls style="display: none;">
+            <source src="../audio/en/informacion.mp3" type="audio/mpeg">
+        </audio>
+        <div id="textos-sizes" class="square-seccion" style="margin-top: 35px;">
+            <div class="square-seccion-title" aria-label="Color de alto contraste">Text Reader</div>
+            <div class="contrast-center">
+                <button id="cuadro1"  class="cuadroimg1" aria-label="Reproducir">Play</button>
+                <button id="cuadro2"  class="cuadroimg2" aria-label="Pausar">Pause</button>
+                <button id="cuadro3"  class="cuadroimg3" aria-label="Volver ">Reset</button>
+            </div>
+        </div>
+        <div id="mulit-accesibilidad" class="square-seccion">
+            <div class="square-seccion-title" aria-label="Color de alto contraste">Accessibility</div>
+            <div class="contrast-center">
+                <button id="cuadro4" class="cuadroimg4" aria-label=" - Ocultar Imagenes - ">Hide Images
+                </button>
+                <button id="cuadro5" class="cuadroimg5"  aria-label=" - Cursor Grande - ">Large Cursor</button>
+                <button id="cuadro6" class="cuadroimg6" aria-label=" - Dislexia - " >Dyslexia</button>
+            </div>
+            <div class="contrast-center">
+                <button id="cuadro7" class="cuadroimg7" aria-label=" - Incremento de Texto - ">Increment Text
+                   <div></div>
+               </button>
+                <button id="cuadro8" class="cuadroimg8" aria-label=" - Disminuir Texto - ">Decrease Text</button>
+                <button id="cuadro9" class="cuadroimg9" aria-label=" - Guia de lectura - ">Reading Guide</button>
+            </div>
+            <div class="contrast-center">
+                <button id="cuadro10" class="cuadroimg10" aria-label=" - Aumentar Espacio - ">Increase Space
+                   <div></div>
+               </button>
+                <button id="cuadro11" class="cuadroimg11" aria-label=" - Disminuir Espacio - ">Decrease Space</button>
+                <button id="cuadro12" class="cuadroimg12" aria-label=" - Libro -">Reading Mode
+                   <!-- <div></div> -->
+                </button>
+            </div>
+        </div>
+        <div id="constrast" class="square-seccion">
+            <div class="square-seccion-title" aria-label="Color de alto contraste">High Contrast Colour</div>
+            <div class="contrast-center">
+                <button id="cuadro13" class="cuadroimg13"  aria-label=" - Alto contraste - ">High Contrast
+                </button>
+                <button id="cuadro14" class="cuadroimg14"  aria-label=" - Alto contraste - ">High Contrast</button>
+                <button id="cuadro15" class="cuadroimg15" aria-label=" - Alto contraste - ">Gray Colour</button>
+                <button id="cuadro16" class="cuadroimg15" aria-label=" - Alto contraste - ">Normal</button>
+            </div>
+        </div>
+    </div>
+   
+    <!-- end sidebar  -->
+    <div  id="page">
+    <!--MODO DISCAPACIDAD-->
+    <div class="discapacidad">
+        <div>
+            <p class="discapacidad_idioma"><a href="../transparencia.html">ES</a> | <a href=""><b>EN</b></a></p>
+        </div>
+    </div>
+
+    <!--BANNER-->
+    <div class="banner">
+        <img src="../img/transparency.png" alt="banner-uprit">
+    </div>
+
+    <!------------------------------------CUERPO PRINCIPAL--------------------------------------->
+    <div class="cuerpo">
+        <div class="cuerpo_bloque">
+            <div class="fa-transparencia"><i class="fa-regular fa-file facp"></i></div>
+            <div>
+                <p class="fw-bolder fs-5">STATUTE</p>
+                <p class="h6">TUPA, institutional strategic plan, university regulation</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal">
+                    <a href="#tupa">See more</a>
+                </button>
+            </div>
+        </div>
+        <div class="cuerpo_bloque">
+            <div class="fa-transparencia"><i class="fa-solid fa-book facp"></i></div>
+            <div>
+                <p class="fw-bolder fs-5">PROCEEDINGS</p>
+                <p class="h6">Faculty council sessions, university council, general assembly of associates</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal">
+                    <a href="#actas">See more</a>
+                </button>
+            </div>
+        </div>
+        <div class="cuerpo_bloque">
+            <div class="fa-transparencia"><i class="fa-solid fa-comments-dollar facp"></i></div>
+            <div>
+                <p class="fw-bolder fs-5">FINANCIAL STATEMENTS</p>
+                <p class="h6">Institutional Budget, Budget Execution and Balances</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal">
+                    <a href="#financiero">See more</a>
+                </button>
+            </div>
+        </div>
+        <div class="cuerpo_bloque">
+            <div class="fa-transparencia"><i class="fa-solid fa-list-ol facp"></i></div>
+            <div>
+                <p class="fw-bolder fs-5">SCHOLARSHIPS AND CREDITS</p>
+                <p class="h6">Educational available and granted</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" >
+                    <a href="#becas">See more</a>
+                </button>
+            </div>
+        </div>
+        <div class="cuerpo_bloque">
+            <div class="fa-transparencia"><i class="fa-solid fa-sack-dollar facp"></i></div>
+            <div>
+                <p class="fw-bolder fs-5">INVESTMENTS</p>
+                <p class="h6">Reinvestments, donations, infrastructure works, resources from various sources, others</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal">
+                    <a href="#inversiones">See more</a>
+                </button>
+            </div>
+        </div>
+        <div class="cuerpo_bloque">
+            <div class="fa-transparencia"><i class="fa-brands fa-searchengin facp"></i></div>
+            <div>
+                <p class="fw-bolder fs-5">RESEARCH</p>
+                <p class="h6">Projects and expenses generated</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal">
+                    <a href="#investigacion">See more</a>
+                </button>
+            </div>
+        </div>
+        <div class="cuerpo_bloque">
+            <div class="fa-transparencia"><i class="fa-solid fa-folder-closed facp"></i></div>
+            <div>
+                <p class="fw-bolder fs-5">EDUCATIONAL RATES</p>
+                <p class="h6">List of payments required from students for all kinds, as appropriate</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal">
+                    <a href="#tasas">See more</a>
+                </button>
+            </div>
+        </div>
+        <div class="cuerpo_bloque">
+            <div class="fa-transparencia"><i class="fa-solid fa-users facp"></i></div>
+            <div>
+                <p class="fw-bolder fs-5">NUMBER OF STUDENTS</p>
+                <p class="h6">Enrolled and graduated by study programs</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal">
+                    <a href="#estudiantes">See more</a>
+                </button>
+            </div>
+        </div>
+        <div class="cuerpo_bloque">
+            <div class="fa-transparencia"><i class="fa-sharp fa-solid fa-user-tie facp"></i></div>
+            <div>
+                <p class="fw-bolder fs-5">TEACHERS COUNCIL</p>
+                <p class="h6">Class, category, resume</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal">
+                    <a href="#docentes">See more</a>
+                </button>
+            </div>
+        </div>
+        <div class="cuerpo_bloque">
+            <div class="fa-transparencia"><i class="fa-regular fa-user facp"></i></div>
+            <div>
+                <p class="fw-bolder fs-5">APPLICANTS</p>
+                <p class="h6">Entrants, enrolled and graduated by year and career</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal">
+                    <a href="#postulantes">See more</a>
+                </button>
+            </div>
+        </div>
+        <div class="cuerpo_bloque">
+            <div class="fa-transparencia"><i class="fa-solid fa-city"></i></div>
+            <div>
+                <p class="fw-bolder fs-5">ENVIRONMENTS</p>
+                <p class="h6">Social, sporting or cultural services</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal">
+                    <a href="#servicios">Ver detalle</a>
+                </button>
+            </div>
+        </div>
+        <div class="cuerpo_bloque">
+            <div class="fa-transparencia"><i class="fa-brands fa-black-tie"></i></div>
+            <div>
+                <p class="fw-bolder fs-5">WORK IN THE UPRIT</p>
+                <p class="h6">Apply to the UPRIT</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal">
+                    <a href="#trabaja">Ver detalle</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------DETALLE DEL CUERPO PRINCIPAL--------------------------------------->
+    <div class="detalle">
+        <div>
+            <a name="tupa"></a>
+            <p class="detalle_bloque">TUPA, INSTITUTIONAL STRATEGIC PLAN, UNIVERSITY REGULATION</p>
+            <p><a href="../documentos/estatuto/Estatuto.pdf" target="_blank">Bylaws</a></p>
+            <p><a href="../documentos/estatuto/REPAU-2023.pdf" target="_blank">REPAU 2023</a></p>
+            <p><a href="../documentos/estatuto/PEI.pdf" target="_blank">Institutional Strategic Plan</a></p>
+            <p><a href="../documentos/estatuto/Reglamento General.pdf" target="_blank">General Regulations</a></p>
+            <p><a href="../documentos/estatuto/ROF.pdf" target="_blank">Regulation of Organization and Functions</a></p>
+            <p><a href="../documentos/estatuto/Contrato Docente.pdf" target="_blank">Regulations for Appointment, Hiring, Promotion, Ratification and Removal of Teachers
+            </a></p>
+            <p><a href="../documentos/estatuto/Disciplina Docente.pdf" target="_blank">Regulations for Faculty Discipline</a></p>
+            <p><a href="../documentos/estatuto/Disciplina Estudiante.pdf" target="_blank">Student Discipline Regulations</a></p>
+            <p><a href="../documentos/estatuto/Diversidad y Permanencia.pdf" target="_blank">Diversity and Permanence Regulations</a></p>
+            <p><a href="../documentos/estatuto/Grados y Titulos.pdf" target="_blank">Regulations for Degrees and Titles</a></p>
+            <p><a href="../documentos/estatuto/Insercion Laboral.pdf" target="_blank">Regulations for Job Placement and Graduate Follow-up</a></p>
+            <p><a href="../documentos/estatuto/Prevencion Hostigamiento.pdf" target="_blank">Sexual Harassment Prevention Regulations</a></p>
+            <p><a href="../documentos/estatuto/Bienestar Universitario.pdf" target="_blank">Regulation of University Welfare Programs</a></p>
+            <p><a href="../documentos/estatuto/Investigacion Cientifica.pdf" target="_blank">Scientific Research Regulations</a></p>
+            <p><a href="../documentos/estatuto/Fondo Editorial.pdf" target="_blank">Regulations for the Editorial Fund</a></p>
+            <p><a href="../documentos/estatuto/Requisitos Idioma.pdf" target="_blank">Language Requirements Regulations</a></p>
+            <p><a href="../documentos/estatuto/Defensoria Universitaria.pdf" target="_blank">University Ombudsman Regulations</a></p>
+            <p><a href="../documentos/estatuto/Admision.pdf" target="_blank">Admission Regulations</a></p>
+            <p><a href="../documentos/estatuto/Proyeccion Social.pdf" target="_blank">Regulations for Social Projection and Volunteering Programs</a></p>
+            <p><a href="../documentos/estatuto/Movilidad Academica.pdf" target="_blank">Academic Mobility Regulations for Students and Teachers</a></p>
+            <p><a href="../documentos/estatuto/Tutoria y Permanencia.pdf" target="_blank">Tutoring and Permanence Regulations</a></p>
+            <p><a href="../documentos/estatuto/RIT.pdf" target="_blank">Internal Work Regulations</a></p>
+            <p><a href="../documentos/estatuto/Propiedad Intelectual.pdf" target="_blank">Intellectual Property Regulations</a></p>
+            <p><a href="../documentos/estatuto/Buen Gobierno.pdf" target="_blank">Good Governance and Institutional Risk Management Regulation</a></p>
+            <p><a href="../documentos/estatuto/Seguridad Salud Trabajo.pdf" target="_blank">Health and Safety at Work Regulations</a></p>
+            <p><a href="../documentos/estatuto/Portal Transparencia.pdf" target="_blank">Regulation of the University Transparency Portal</a></p>
+        </div>
+        <br>
+        <div>
+            <p class="detalle_bloque"><a name="actas">PROCEEDINGS - FACULTY COUNCIL SESSIONS, UNIVERSITY COUNCIL, GENERAL ASSEMBLY OF ASSOCIATES</a></p>
+            <p><a href="../documentos/actas/Acuerdos de la AGA 2023.pdf" target="_blank">Resolutions of the General Assembly of Associates 2023</a></p>
+            <p><a href="../documentos/actas/Acuerdos de la AGA 2022.pdf" target="_blank">Resolutions of the General Assembly of Associates 2022</a></p>
+            <p><a href="../documentos/actas/Acuerdos de la AGA 2021.pdf" target="_blank">Resolutions of the General Assembly of Associates 2021</a></p>
+            <p><a href="../documentos/actas/Acuerdos de la AGA 2020.pdf" target="_blank">Resolutions of the General Assembly of Associates 2020</a></p>
+            <p><a href="../documentos/actas/Acuerdos de la AGA 2019.pdf" target="_blank">Resolutions of the General Assembly of Associates 2019</a></p>
+            
+            <p><a href="../documentos/actas/Actas Sesion Derecho 2020.pdf" target="_blank">Minutes of the Council Session of the Faculty of Law - Year 2020</a></p>
+            
+            <p><a href="../documentos/actas/Actas Consejo Universitario 2023.pdf" target="_blank">Minutes of the University Council Session - Year 2023</a></p>
+            <p><a href="../documentos/actas/Actas Consejo Universitario 2019.pdf" target="_blank">Minutes of the University Council Session - Year 2019</a></p>
+            <p><a href="../documentos/actas/Actas Sesion Empresariales 2019.pdf" target="_blank">Minutes of the Business School Council Meeting - Year 2019</a></p>
+            <p><a href="../documentos/actas/Actas Sesion Derecho 2019.pdf" target="_blank">Minutes of the Law School Council Meeting - Year 2019</a></p>
+            <p><a href="../documentos/actas/Actas Sesion Ingenieria 2019.pdf" target="_blank">Minutes of the Council Meeting of the Faculty of Engineering - Year 2019</a></p>
+            
+            <p><a href="../documentos/actas/Actas Consejo Universitario 2018.pdf" target="_blank">Minutes of the University Council Session - Year 2018</a></p>
+            <p><a href="../documentos/actas/Actas Sesion Empresariales 2018.pdf" target="_blank">Minutes of the Business School Council Meeting - Year 2018</a></p>
+            <p><a href="../documentos/actas/Actas Sesion Derecho 2018.pdf" target="_blank">Minutes of the Law School Council Meeting - Year 2018</a></p>
+            <p><a href="../documentos/actas/Actas Sesion Ingenieria 2018.pdf" target="_blank">Minutes of the Council Meeting of the Faculty of Engineering - Year 2018</a></p>
+            
+            <p><a href="../documentos/actas/Actas Consejo Universitario 2017.pdf" target="_blank">Minutes of the University Council Session - Year 2017</a></p>
+            <p><a href="../documentos/actas/Actas Sesion Empresariales 2017.pdf" target="_blank">Minutes of the Business School Council Meeting - Year 2017</a></p>
+            <p><a href="../documentos/actas/Actas Sesion Derecho 2017.pdf" target="_blank">Minutes of the Law School Council Meeting - Year 2017</a></p>
+            <p><a href="../documentos/actas/Actas Sesion Ingenieria 2017.pdf" target="_blank">Minutes of the Council Meeting of the Faculty of Engineering - Year 2017</a></p>
+            
+            <p><a href="../documentos/actas/Actas Consejo Universitario 2016.pdf" target="_blank">Minutes of the University Council Session - Year 2016</a></p>
+        </div>
+        <br>
+        <div>
+            <p class="detalle_bloque"><a name="financiero">FINANCIAL STATEMENTS - INSTITUTIONAL BUDGET, BUDGET EXECUTION AND BALANCES</a></p>
+            <p><a href="../documentos/finanzas/Ejecución Presupuestal 2023.pdf" target="_blank">Budgetary Implementation 2023</a></p>
+            <p><a href="../documentos/finanzas/Ejecución Presupuestal 2022.pdf" target="_blank">Budgetary Implementation 2022</a></p>
+            <p><a href="../documentos/finanzas/Dictamen EEFF 2019-2020.pdf" target="_blank">Financial Statements Opinion 2020</a></p>
+            <p><a href="../documentos/finanzas/Dictamen EEFF 2020-2021.pdf" target="_blank">Financial Statements Opinion 2021</a></p>
+            <p><a href="../documentos/finanzas/Dictamen EEFF 2021-2022.pdf" target="_blank">Financial Statements Opinion 2022</a></p>
+            <p><a href="../documentos/finanzas/Dictamen EEFF 2023.pdf" target="_blank">Financial Statements Opinion 2023</a></p>
+            <p><a href="../documentos/finanzas/Presupuesto Institucional 2023-2029.pdf" target="_blank">Institutional Budget 2023-2029</a></p>
+            <p><a href="../documentos/finanzas/Presupuesto Operativo Institucional 2023.pdf" target="_blank">Institutional Operating Budget 2023</a></p>
+            <p><a href="../documentos/finanzas/Presupuesto Operativo Institucional 2024.pdf" target="_blank">Institutional Operating Budget 2024</a></p>
+        </div>
+        <br>
+        <div>
+            <p class="detalle_bloque"><a name="becas">SCHOLARSHIPS AND CREDITS - EDUCATIONAL AVAILABLE AND GRANTED</a></p>
+            <p><a href="../documentos/becas/Becas y Recategorizacion.pdf" target="_blank">Scholarship and Recategorization Regulations</a></p>
+            <!--<p><a href="../documentos/becas/Becas 2021 - 2023.pdf" target="_blank">Scholarships 2021 to 2023</a></p>
+            <p><a href="../documentos/becas/Becas 2019-02.pdf" target="_blank">Scholarships 2019 - II</a></p>
+            <p><a href="../documentos/becas/Becas 2019-0.pdf" target="_blank">scholarships 2019 - I</a></p>-->
+        </div>
+        <br>
+        <div>
+            <p class="detalle_bloque"><a name="inversiones">INVESTMENTS - REINVESTMENTS, DONATIONS, INFRASTRUCTURE WORKS, RESOURCES FROM VARIOUS SOURCES, OTHERS</a></p>
+            <p><a href="../documentos/inversion/Plan Inversion Infraestructura.pdf" target="_blank">Infrastructure Investment Plan 2023 - 2029</a></p>
+        </div>
+        <br>
+        <div>
+            <p class="detalle_bloque"><a name="investigacion">RESEARCH - PROJECTS AND EXPENSES GENERATED</a></p>
+            <p><a href="../documentos/investigacion/PI - Empresariales.pdf" target="_blank">Research Projects - Business Sciences</a></p>
+            <p><a href="../documentos/investigacion/PI - Derecho.pdf" target="_blank">Research Projects - Law</a></p>
+            <p><a href="../documentos/investigacion/Acta Comité de Etica - Diciembre 2023.pdf" target="_blank">Research Ethics Committee Minutes - December 2023</a></p>
+            <p><a href="../documentos/investigacion/Acta Comité de Etica - Noviembre 2023.pdf" target="_blank">Research Ethics Committee Minutes - November 2023</a></p>
+            <p><a href="../documentos/investigacion/Acta Comité de Etica - Octubre 2023.pdf" target="_blank">Research Ethics Committee Minutes - October 2023</a></p>
+            <p><a href="../documentos/investigacion/Acta Comité de Etica - Setiembre 2023.pdf" target="_blank">Research Ethics Committee Minutes - Setember 2023</a></p>
+            <p><a href="../documentos/investigacion/Acta Comité de Etica - Agosto 2023.pdf" target="_blank">Research Ethics Committee Minutes - August 2023</a></p>
+            <p><a href="../documentos/investigacion/Acta Comité de Etica - Julio 2023.pdf" target="_blank">Research Ethics Committee Minutes - July 2023</a></p>
+            <p><a href="../documentos/investigacion/Acta Comité de Etica - Junio 2023.pdf" target="_blank">Research Ethics Committee Minutes - June 2023</a></p>
+            <p><a href="../documentos/investigacion/Acta Comité de Etica - Mayo 2023.pdf" target="_blank">Research Ethics Committee Minutes - May 2023</a></p>
+            <p><a href="../documentos/investigacion/Acta Comité de Etica - Abril 2023.pdf" target="_blank">Research Ethics Committee Minutes - April 2023</a></p>
+            <p><a href="../documentos/investigacion/Acta Comité de Etica - Marzo 2023.pdf" target="_blank">Research Ethics Committee Minutes - March 2023</a></p>
+            <p><a href="../documentos/investigacion/Acta Comité de Etica - Febrero 2023.pdf" target="_blank">Research Ethics Committee Minutes - February 2023</a></p>
+            <p><a href="../documentos/investigacion/Acta Comité de Etica - Enero 2023.pdf" target="_blank">Research Ethics Committee Minutes - January 2023</a></p>
+            <p><a href="../documentos/investigacion/Acta Fondo Editorial.pdf" target="_blank">Editorial Fund Minutes - June 2023</a></p>
+            <p><a href="../documentos/investigacion/Personal Investigacion.pdf" target="_blank">Researcher Teachers Chart</a></p>
+            <p><a href="../documentos/investigacion/Codigo Etica.pdf" target="_blank">Code of Ethics</a></p>
+            <p><a href="../documentos/investigacion/Proyectos de investigacion 2019.pdf" target="_blank">Research Projects 2019</p>
+            <p><a href="../documentos/investigacion/Proyectos de investigacion 2018.pdf" target="_blank">Research Projects 2018</p>
+        </div>
+        <br>
+        <div>
+            <p class="detalle_bloque"><a name="tasas">EDUCATIONAL RATES - LIST OF PAYMENTS REQUIRED FROM STUDENTS FOR ALL KINDS, AS APPROPRIATE</a></p>
+            <p><a href="../documentos/tasas/Tasas Educativas 2024.pdf" target="_blank">Educational Fees 2024</a></p>
+            <p><a href="../documentos/tasas/Tasas Educativas 2023.pdf" target="_blank">Educational Fees 2023</a></p>
+        </div>
+        <br>
+        <div>
+            <p class="detalle_bloque"><a name="estudiantes">NUMBER OF STUDENTS - ENROLLED AND GRADUATED BY STUDY PROGRAMS</a></p>
+            <p><a href="../documentos/estudiantes/matriculados201902.pdf" target="_blank">Students enrolled 2019 - II</a></p>
+            <p><a href="../documentos/estudiantes/matriculados201901.pdf" target="_blank">Students enrolled 2019 - I</a></p>
+            <p><a href="../documentos/estudiantes/matriculados201802.pdf" target="_blank">Students enrolled 2018 - II</a></p>
+            <p><a href="../documentos/estudiantes/matriculados201801.pdf" target="_blank">Students enrolled 2018 - I</a></p>
+            <p><a href="../documentos/estudiantes/matriculados201702.pdf" target="_blank">Students enrolled 2017 - II</a></p>
+            <p><a href="../documentos/estudiantes/Egesados Contabilidad y Finanzas.pdf" target="_blank">Students graduating from Accounting and Finance</a></p>
+            <p><a href="../documentos/estudiantes/Egesados Derecho.pdf" target="_blank">Graduate Law students</a></p>
+            <p><a href="../documentos/estudiantes/Egesados Ingenieria Civil.pdf" target="_blank">Students graduating from Civil Engineering</a></p>
+            <p><a href="../documentos/estudiantes/Egesados Ingenieria de Sistemas.pdf" target="_blank">Students graduating from Systems Engineering and Computer Science</a></p>
+            <p><a href="../documentos/estudiantes/Egesados Marketing.pdf" target="_blank">Students graduating from Marketing and International Business</a></p>
+        </div>
+        <br>
+        <div>
+            <p class="detalle_bloque"><a name="docentes">TEACHERS COUNCIL - CLASS, CATEGORY, RESUME</a></p>
+            <p><a href="../documentos/docentes/Cronograma docente TC.pdf" target="_blank">Selection and hiring contest for full-time teachers</a></p>
+            <p><a href="../documentos/docentes/Cronograma docente TP.pdf" target="_blank">Part-time teacher selection and hiring contest</a></p>
+            <p><a href="../documentos/docentes/BASES DE CONCURSO DOCENTES - TIEMPO PARCIAL 2023.pdf" target="_blank">Part-time Teaching Competition Rules 2023</a></p>
+            <p><a href="../documentos/docentes/BASES DE CONCURSO DOCENTES CONTRATADOS - TIEMPO PARCIAL 2022.pdf" target="_blank">Rules for Teaching Contest Hired Part-Time 2022</a></p>
+            <p><a href="../documentos/docentes/BASES DE CONCURSO DOCENTE INVESTIGADOR RENACYT 2023-02.pdf" target="_blank">Teaching Research Competition Rules RENACYT 2023 - II </a></p>
+            <p><a href="../documentos/docentes/BASES DE CONCURSO DOCENTES - TIEMPO COMPLETO 2023.pdf" target="_blank">Rules for Full-Time Teaching Competition 2023</a></p>
+            <p><a href="../documentos/docentes/BASES CONCURSO DOCENTES - TIEMPO COMPLETO 2022.pdf" target="_blank">Rules for Full-Time Teaching Competition 2022</a></p>
+            <p><a href="../documentos/docentes/BASES DE CONCURSO DOCENTE INVESTIGADOR RENACYT 2023-01.pdf" target="_blank">Teaching Research Competition Rules RENACYT 2023 - I</a></p>
+            <p><a href="../documentos/docentes/BASES DE CONCURSO DOCENTES ORDINARIOS 2023.pdf" target="_blank">Ordinary Teaching Competition Rules 2023</a></p>
+            <p><a href="../documentos/docentes/RESOLUCIÓN DE GANADOR DOCENTE INVESTIGADOR RENACYT 2023-02.pdf" target="_blank">Resolution of Winner Teaching Researcher RENACYT 2023 - II</a></p>
+            <p><a href="../documentos/docentes/RESOLUCIÓN DE GANADORES DOCENTES CONTRATADOS - TIEMPO PARCIAL 2023.pdf" target="_blank">Resolution of Winner Teacher Hired Part-Time 2023</a></p>
+            <p><a href="../documentos/docentes/RESOLUCIÓN DE GANADORES DOCENTES ORDINARIOS 2023.pdf" target="_blank">Ordinary Teaching Winner Resolution 2023</a></p>
+            <p><a href="../documentos/docentes/RESOLUCIÓN GANADOR DOCENTE - TIEMPO COMPLETO 2023.pdf" target="_blank">Full-Time Teaching Winner Resolution 2023</a></p>
+            <p><a href="../documentos/docentes/RESOLUCIÓN GANADORES DOCENTE INVESTIGADOR RENACYT 2023-01.pdf" target="_blank">Resolution of Winner Teaching Researcher RENACYT 2023 - I</a></p>
+            <p><a href="../documentos/docentes/RESOLUCIÓN GANADORES DOCENTES CONTRATADOS - TIEMPO COMPLETO 2022.pdf" target="_blank">Resolution of Full-Time Hired Teaching Winner 2022</a></p>
+            <p><a href="../documentos/docentes/RESOLUCIÓN GANADORES DOCENTES - TIEMPO PARCIAL 2022.pdf" target="_blank">Resolution of Part-Time Hired Teaching Winner 2022</a></p>
+            <p><a href="../documentos/docentes/Escala Salarial.pdf" target="_blank">Salary Scales</a></p>
+            <p><a href="../documentos/docentes/Relacion  Docentes Año 3-1.pdf" target="_blank">List of Teachers Year 3-1</a></p>
+            <p><a href="../documentos/docentes/Relacion  Docentes Año 2-2.pdf" target="_blank">List of Teachers Year 2-2</a></p>
+            <p><a href="../documentos/docentes/Relacion  Docentes Año 2-1.pdf" target="_blank">List of Teachers Year 2-1</a></p>
+            <p><a href="../documentos/docentes/Relacion  Docentes Año 1-2.pdf" target="_blank">List of Teachers Year 1-2</a></p>
+            <p><a href="../documentos/docentes/Relacion  Docentes Año 1-1.pdf" target="_blank">List of Teachers Year 1-1</a></p>
+        </div>
+        <br>
+        <div>
+            <p class="detalle_bloque"><a name="postulantes">APPLICANTS - ENTRANTS BY YEAR AND CAREER</a></p>
+            <p><a href="../documentos/postulantes/Ingresantes 2019-02.pdf" target="_blank">Applicants and entrants 2019 - II</a></p>
+            <p><a href="../documentos/postulantes/Ingresantes 2019-01.pdf" target="_blank">Applicants and entrants 2019 - I</a></p>
+            <p><a href="../documentos/postulantes/Ingresantes 2018-02.pdf" target="_blank">Applicants and entrants 2018 - II</a></p>
+            <p><a href="../documentos/postulantes/Ingresantes 2018-01.pdf" target="_blank">Applicants and entrants 2018 - I</a></p>
+            <p><a href="../documentos/postulantes/Ingresantes 2017-02.pdf" target="_blank">Applicants and entrants 2017 - II</a></p>
+            <p><a href="../documentos/postulantes/Ingresantes 2017-01.pdf" target="_blank">Applicants and entrants 2017 - I</a></p>
+        </div>
+        <br>
+        <div>
+            <p class="detalle_bloque"><a name="servicios">ENVIRONMENTS - SOCIAL, SPORTS OR CULTURAL SERVICES</a></p>
+            <p><a href="../documentos/ambientes/Servicios Deportivos.pdf" target="_blank">Environments intended to provide sports services</a></p>
+            <p><a href="../documentos/ambientes/Servicios Salud.pdf" target="_blank">Environments intended to provide health services</a></p>
+            <p><a href="../documentos/ambientes/Servicios Psicopedagogicos.pdf" target="_blank">Environments intended to provide psychopedagogical services</a></p>
+            <p><a href="../documentos/ambientes/Servicios Culturales.pdf" target="_blank">Environments intended to provide cultural services</a></p>
+            <p><a href="../documentos/ambientes/Servicios Sociales.pdf" target="_blank">Environments intended to provide social services</a></p>
+        </div>
+        <br>
+        <div>
+            <p class="detalle_bloque"><a name="trabaja">WORK WITH US - APPLY TO UPRIT</a></p>
+            <p><a href="../documentos/trabaja/Cronograma publicación enero 2024.pdf" target="_blank">Call January 2024</a></p>
+            <p><a href="../documentos/docentes/Cronograma docente TC.pdf" target="_blank">Selection and hiring contest for full-time teachers</a></p>
+            <p><a href="../documentos/docentes/Cronograma docente TP.pdf" target="_blank">Part-time teacher selection and hiring contest</a></p>
+        </div>
+    </div>
+
+    <!-------------------FOOTER----------------->
+    <div class="footer_centro">
+        <div data-aos="fade-up">
+            <p class="linea"></p>
+            <div>
+                <p class="upt">UNIVERSIDAD PRIVADA DE TRUJILLO</p>
+            </div>
+            <div class="informes">
+                <div><i class="fa-solid fa-phone"></i> 044-2356XX</div>
+                <div><i class="fa-solid fa-location-dot"></i> Av. Industrial km. 4 - Semirústica El Bosque</div>
+                <div><i class="fa-solid fa-at"></i> informes@uprit.edu.pe</div>
+            </div><br>
+            <div class="redes">
+                <a href="https://www.facebook.com/uptrujillo" target="_blank"><i class="fa-brands fa-facebook-f sociales"></i></a>
+                    <a href="https://x.com/UpritTrujillo" target="_blank"><i class="fa-brands fa-twitter sociales"></i></a>
+                    <a href="https://www.youtube.com/@uprit2166" target="_blank"><i class="fa-brands fa-youtube sociales"></i></a>
+                    <a href="https://www.instagram.com/upritrujillo/" target="_blank"><i class="fa-brands fa-instagram sociales"></i></a>
+                    <a href="https://www.linkedin.com/school/universidad-privada-de-trujillo" target="_blank"><i class="fa-brands fa-linkedin-in sociales"></i></a>
+                    <a href="https://pin.it/3zQPcsp4X" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+            <div class="redes">
+                <p style="text-align: center;">UPRIT © 2022 - All rights reserved. <br>
+                    Dpto of Information Technologies - UPRIT</p>
+            </div>
+        </div>
+    </div>
+    <!-- lectura -->
+    <div id="read_guide"></div>
+    </div>
+    <script src="../js/menu.js"></script>
+    <script src="../js/acceso.js"></script>
+    <script src="../js/buscar.js"></script>
+</body>
+</html>

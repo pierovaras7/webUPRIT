@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPRIT - ADMISION
+    </title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    
+    <!-------------------------------------------- CSS PROPIOS ------------------------------------------->
+    <link rel="stylesheet" href="css/uprit.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/admision.css">
+    
+    <!---------------------------------------------FUENTES GOOGLE------------------------------------->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+
+    <!---------------------------------------------FONTAWESOME------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-------------------------------------------- CDN BOOTSTRAP 5 ------------------------------------------->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!---------------------------------------------LIBRERIA AOS (EFECTO) Y OWS (CARRUSEL)------------------------------------->
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/accesible/styles.css">
+
+    <!-------------------------------------------- SCRIPT JQUERY Y CARRUSEL ------------------------------------------->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+</head>
+<body>
+    <!----------MENÚ----------->
+    <nav class="main-nav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-5 fw-bolder fs-3" href="#">LA UPRIT</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="autoridades.html">Autoridades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="transparencia.html">Transparencia</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Carreras</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="administracion.html"><i class="fa-solid fa-user-tie"></i> Administracion de Empresas</a></li>
+                                <li><a class="dropdown-item" href="contabilidad.html"><i class="fa-solid fa-coins"></i> Contabilidad y Finanzas</a></li>
+                                <li><a class="dropdown-item" href="derecho.html"><i class="fa-solid fa-scale-balanced"></i> Derecho</a></li>
+                                <li><a class="dropdown-item" href="civil.html"><i class="fa-solid fa-helmet-safety"></i> Ingeniería Civil</a></li>
+                                <!-- <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="informacion.html"><i class="fa-sharp fa-solid fa-universal-access"></i> Acceso a la información pública</a></li>
+                                <li><a class="dropdown-item" href=""><i class="fa-solid fa-pen-to-square"></i> Admisión</a></li>
+                                <li><a class="dropdown-item" href="atencion.html"><i class="fa-solid fa-headset"></i> Atención</a></li>
+                                <li><a class="dropdown-item" href="idiomas.html"><i class="fa-solid fa-globe"></i> Centro de Idiomas</a></li>
+                                <li><a class="dropdown-item" href="defensoria.html"><i class="fa-solid fa-shield-halved"></i> Defensoría Universitaria</a></li>
+                                <li><a class="dropdown-item" href="fondoeditorial.html"><i class="fa-sharp fa-solid fa-book"></i> Fondo Editorial</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <input type="text" placeholder="Buscar.." class="text_input" id="Buscartexto">
+                    <button class="btn-drop-text" id="droptext" aria-label="Borrar" style="font-weight: 800;margin-left: 0;"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+        </nav>
+        <!-- abrir sidbar -->
+        <div class="leftbutton image-acces"></div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <audio controls style="display: none;">
+            <source src="audio/soundtrack.mp3" type="audio/mpeg">
+        </audio>
+        <div id="textos-sizes" class="square-seccion" style="margin-top: 35px;">
+            <div class="square-seccion-title" aria-label="Color de alto contraste">Lector de Texto</div>
+            <div class="contrast-center">
+                <button id="cuadro1"  class="cuadroimg1" aria-label="Reproducir">Reproducir</button>
+                <button id="cuadro2"  class="cuadroimg2" aria-label="Pausar">Pausar</button>
+                <button id="cuadro3"  class="cuadroimg3" aria-label="Volver ">Reiniciar</button>
+            </div>
+        </div>
+        <div id="mulit-accesibilidad" class="square-seccion">
+            <div class="square-seccion-title" aria-label="Color de alto contraste">Accesibilidad</div>
+            <div class="contrast-center">
+                <button id="cuadro4" class="cuadroimg4" aria-label=" - Ocultar Imagenes - ">Ocultar Imagenes
+                </button>
+                <button id="cuadro5" class="cuadroimg5"  aria-label=" - Cursor Grande - ">Cursor Grande</button>
+                <button id="cuadro6" class="cuadroimg6" aria-label=" - Dislexia - " >Dislexia</button>
+            </div>
+            <div class="contrast-center">
+                <button id="cuadro7" class="cuadroimg7" aria-label=" - Incremento de Texto - ">Incrementar Texto
+                   <div></div>
+               </button>
+                <button id="cuadro8" class="cuadroimg8" aria-label=" - Disminuir Texto - ">Disminuir Texto</button>
+                <button id="cuadro9" class="cuadroimg9" aria-label=" - Guia de lectura - ">Guia de lectura</button>
+            </div>
+            <div class="contrast-center">
+                <button id="cuadro10" class="cuadroimg10" aria-label=" - Aumentar Espacio - ">Aumentar Espacio
+                   <div></div>
+               </button>
+                <button id="cuadro11" class="cuadroimg11" aria-label=" - Disminuir Espacio - ">Disminuir Espacio</button>
+                <button id="cuadro12" class="cuadroimg12" aria-label=" - Libro -">Modo Lectura
+                   <!-- <div></div> -->
+                </button>
+            </div>
+        </div>
+        <div id="constrast" class="square-seccion">
+            <div class="square-seccion-title" aria-label="Color de alto contraste">Color de alto contraste</div>
+            <div class="contrast-center">
+                <button id="cuadro13" class="cuadroimg13"  aria-label=" - Alto contraste - ">Contraste 1
+                </button>
+                <button id="cuadro14" class="cuadroimg14"  aria-label=" - Alto contraste - ">Contraste 2</button>
+                <button id="cuadro15" class="cuadroimg15" aria-label=" - Alto contraste - ">Gris</button>
+                <button id="cuadro16" class="cuadroimg15" aria-label=" - Alto contraste - ">Normal</button>
+            </div>
+        </div>
+    </div>
+   
+    <!-- end sidebar  -->
+    
+    <div  id="page">
+        <div class="container">
+            <!--MODO DISCAPACIDAD-->
+            <div class="discapacidad">
+                <!-- <div class="container-btn-mode">
+                    <div  class="btn-mode sun activer">
+                        <i id="id-sun" class="fas fa-sun"></i>
+                    </div>
+                    <div  class="btn-mode moon">
+                        <i id="id-moon" class="fas fa-moon"></i>
+                    </div>
+                </div> -->
+                <div>
+                    <p class="discapacidad_idioma"><a href=""><b>ES</b></a> | <a href="en/admision.html">EN</a></p>
+                </div>
+            </div>
+
+            <!--BANNER-->
+            <div class="banner">
+                <img src="img/admision.png" alt="admisión uprit" id="logo">
+            </div>
+
+            <!-- Se coloca la clase 'listado' solo para aplicar la búsqueda, no tiene ningun CSS -->
+
+            <!--VACANTES-->
+            <!-- <p class="titulo" data-aos="fade-up">VACANTES POR CARRERA</p>
+            <div class="vacantes parrafo" data-aos="fade-up">
+                <div class="vacantes_fila">
+                    <div class="vacantes_carrera">
+                        <div class="listado">Administración de Empresas <br><small>- Ciencias Empresariales -</small></div>
+                        <div class="vacantes_numero">40</div>
+                    </div>
+                    <div class="vacantes_carrera">
+                        <div class="listado">Contabilidad y Finanzas <br><small>- Ciencias Empresariales -</small></div>
+                        <div class="vacantes_numero">40</div>
+                    </div>
+                    <div class="vacantes_carrera">
+                        <div class="listado">Derecho <br><small>- Derecho y Ciencias Políticas -</small></div>
+                        <div class="vacantes_numero">50</div>
+                    </div>
+                    <div class="vacantes_carrera">
+                        <div class="listado">Ingeniería Civil <br><small>- Ingeniería -</small></div>
+                        <div class="vacantes_numero">60</div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!--TEMARIO-->
+
+            <!--MODALIDADES DE ADMISIÓN-->
+            <p class="titulo" data-aos="fade-up">MODALIDADES DE ADMISIÓN</p>
+            <div class="modalidades" data-aos="fade-up">
+                <div>
+                    <p class="parrafo">Modalidad Ordinaria</p>
+                    <hr>
+                    <ul>
+                        <li class="listado">Por Examen general o Examen ordinario</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="parrafo">Modalidades No Ordinarias o Extraordinarias</p>
+                    <hr>
+                    <ul>
+                        <li class="listado">Titulados o egresados Universitarios - Segunda profesión universitaria</li>
+                        <li class="listado">Titulados o egresados - De Institutos de Educación Superior Técnicos</li>
+                        <li class="listado">Titulados o egresados -  De Institutos de Educación Superior Técnicos con Convenio</li>
+                        <li class="listado">Titulados o egresados - De Escuelas de Educación Superior Tecnológicas</li>
+                        <li class="listado">Por Traslado Interno, estudiantes universitarios otros programas de la UPRIT</li>
+                        <li class="listado">Por Traslado Externo, estudiantes universitarios otras universidades</li>
+                        <li class="listado">Por Traslado Externo por Convenio de doble grado u similar</li>
+                        <li class="listado">Por Alto Rendimiento: Egresados Colegios de Excelencia Seleccionados</li>
+                        <li class="listado">Por Alto Rendimiento: Tercio Superior</li>
+                        <li class="listado">Por Alto Rendimiento Premio de Excelencia: Los dos (2) primeros puestos del orden de mérito de las instituciones educativas de nivel secundario, de la región La Libertad</li>
+                        <li class="listado">Deportistas PRODAC-Selección Nacional. Los deportistas representativos, acreditados como tales por el Instituto Peruano del Deporte (IPD), que participan en las selecciones nacionales en las disciplinas aprobadas por la UPRIT</li>
+                        <li class="listado">Deportistas representativos, becados por los Programas Deportivos de Alta Competencia (PRODAC) que se desarrollan en la UPRIT</li>
+                        <li class="listado">Las personas con discapacidad, que tienen derecho a una reserva del 5% de las vacantes ofrecidas en el proceso de admisión</li>
+                        <li class="listado">Por egresado Centro Pre-Universitario o en Programa Universiteen, para postulantes a programas de pregrado</li>
+                        <li class="listado">Ingreso por programa de Beca con Convenio: Beca18, programa de Becas Pronabec para posgrado u otro programa de Becas con convenio específico</li>
+                        <li class="listado">Otras modalidades que establezca el Consejo Universitario</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!--REQUISITOS-->
+            <p class="titulo" data-aos="fade-up">REQUISITOS PARA POSTULAR</p>
+            <div class="requisitos" data-aos="fade-up">
+                <div>
+                    <p class="parrafo">Para ingresantes Ciclo I</p>
+                    <hr>
+                    <ul>
+                        <li class="listado">Solicitud dirigida a la Oficina de Admisión, Prospección y Marketing en el formato respectivo</li>
+                        <li class="listado">Formulario de inscripción debidamente llenado</li>
+                        <li class="listado">Certificados originales de estudios de los cinco años de educación secundaria</li>
+                        <li class="listado">Copia de DNI, Partida de nacimiento original o copia legalizada</li>
+                        <li class="listado">Dos (02) fotografías actuales tamaño carnet a color con fondo blanco física y digital</li>
+                        <li class="listado">Declaración jurada de no tener antecedentes penales</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="parrafo">Para traslados externos</p>
+                    <hr>
+                    <ul>
+                        <li class="listado">Los mismos requisitos de ingresantes Ciclo I, además:</li>
+                        <li class="listado">Haber aprobado por lo menos cuatro periodos lectivos semestrales o setenta y dos (72) créditos en otra universidad</li>
+                        <li class="listado">Certificados oficiales en original de los estudios universitarios o análogos en centros de educación superior, con calificación aprobatoria y sin enmendaduras</li>
+                        <li class="listado">Silabo visado de los cursos que desee convalidar, previa solicitud y de acuerdo al Reglamento de General vigente</li>
+                        <li class="listado">Constancia de no haber sido retirado por problemas de conducta</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-------------------INFORMES----------------->
+            <p class="titulo" data-aos="fade-up">INFORMES</p>
+            <div class="inform" data-aos="fade-up">
+                <p><i class="fa-regular fa-envelope"></i> admision@uprit.edu.pe</p>
+                <p><i class="fa-solid fa-phone"></i> 908124893 - 911872128 - 998126876 - 917654271</p>
+                <p><i class="fa-regular fa-clock"></i> Lunes a viernes: 7:30 a.m - 1:00 p.m y 3:00 pm - 6:00 p.m / Sábados: 7:30 a.m - 1:00 p.m</p>
+            </div>
+
+            <!-------------------FOOTER----------------->
+            <div data-aos="fade-up">
+                <p class="linea"></p>
+                <div>
+                    <p class="upt">UNIVERSIDAD PRIVADA DE TRUJILLO</p>
+                </div>
+                <div class="informes">
+                    <div><i class="fa-solid fa-phone"></i> 044-2356XX</div>
+                    <div><i class="fa-solid fa-location-dot"></i> Av. Industrial km. 4 - Semirústica El Bosque</div>
+                    <div><i class="fa-solid fa-at"></i> informes@uprit.edu.pe</div>
+                </div><br>
+                <div class="redes">
+                    <i class="fa-brands fa-facebook-f sociales"></i>
+                    <i class="fa-brands fa-twitter sociales"></i>
+                    <i class="fa-brands fa-youtube sociales"></i>
+                    <i class="fa-brands fa-instagram sociales"></i>
+                    <i class="fa-brands fa-linkedin-in sociales"></i>
+                </div>
+                <div class="redes">
+                    <p style="text-align: center;">UPRIT © 2022 - Todos los derechos reservados. <br>
+                        Dpto Tecnologías de Información - UPRIT</p>
+                </div>
+            </div>
+        </div>
+        <!-- lectura -->
+        <div id="read_guide"></div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                margin: 10,
+                nav: true,
+                loop: true,
+                autoplay:true,
+                autoplayTimeout:5000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    300: {
+                        items: 2
+                        },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            })
+        })
+    </script>
+
+    <script>
+        function modoclaro(){
+            document.getElementById('page').classList.remove('dark-mode')
+            document.getElementById('id-moon').classList.remove('activer')
+            document.getElementById('logo').src = 'img/admision.png'
+            this.classList.add('activer')
+        }
+        function modooscuro(){
+            document.getElementById('page').classList.add('dark-mode')
+            document.getElementById('id-sun').classList.remove('activer')
+            document.getElementById('logo').src = 'img/admision_dark.png'
+            this.classList.add('activer')
+        }
+        
+        document.addEventListener('click', (e) => {
+            if(e.target.matches('#id-sun'))
+                modoclaro();
+            if(e.target.matches('#id-moon'))
+                modooscuro();
+        })
+    </script>
+
+    <script src="js/aos.js"></script>
+    <!-- <script src="js/modoscuro.js"></script> -->
+    <script>
+        AOS.init({
+            duration: 2000,
+        });
+    </script>
+
+    <script src="js/menu.js"></script>
+    <script src="js/acceso.js"></script>
+    <script src="js/buscar.js"></script>
+</body>
+</html>
+
+<!-- https://www.cayetano.edu.pe/cayetano/es/admision 
+https://www.urp.edu.pe/admision/-->
