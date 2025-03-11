@@ -1,6 +1,8 @@
         body{
             line-height: 2;
         }
+        
+        
 
         section p li{
             font-weight: 500 !important;
@@ -380,23 +382,58 @@
         }
 
         /* Aplicar estilos correctamente a inputs y selects */
-            .form-grid input,
-            .form-grid select {
-                width: 100%; /* Que ocupen todo el ancho */
-                padding: 10px;
-                margin: 5px;
-            }
+        .form-grid input,
+        .form-grid select {
+            width: 100%; /* Que ocupen todo el ancho */
+            padding: 10px;
+            margin: 5px;
+        }
 
-            .btn-submit {
-                width: 100%;
-                padding: 10px;
-                background-color: #a61b3b;
-                color: white;
-                border: none;
-                border-radius: 5px;
-                font-size: 16px;
-                cursor: pointer;
-            }
+        .btn-submit {
+            width: 100%;
+            padding: 10px;
+            background-color: #a61b3b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    
+        
 
+        .text-uprit{
+            color: #a61b3b;
+            font-family: 'Anton', sans-serif; /* Fuente gruesa */
+            font-weight: 100;
+            text-transform: uppercase;
+            font-size: 45px;
+        }
+    
+        .msjDirector{
+            text-align: justify;
+        }
+    
+        .profesor-img {
+            overflow: hidden;
+            display: inline-block;
+            border-radius: 50%;
+        }
+    
+        .profesor-img img {
+            transition: transform 0.3s ease-in-out;
+            width: 300px;
+        }
+    
+        .profesor-img:hover img {
+            transform: scale(1.1); /* Zoom en hover */
+        }
 
+        .profesor-card h5 {
+            font-size: 20px;
+        }
+
+        .profesor-card p {
+            font-weight: bold;
+        }
 
